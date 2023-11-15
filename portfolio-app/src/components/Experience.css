@@ -1,0 +1,223 @@
+.experience {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color:  #d1d1d1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-container h1 {
+    color: white;
+    font-family: Spartan-b;
+    font-size: 200px;
+    opacity: .4;
+}
+
+.experience-details {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.experience-details-1 {
+    margin: auto;
+    font-size: 16px;
+    max-width: 650px;
+    font-family: Spartan-r;
+    line-height: 1.7;
+}
+
+.experience-details-2 {
+    display: flex;
+}
+
+.skills {
+    position: relative;
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+    margin: 20px;
+}
+
+.skills-1 {
+    background-color: black;
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Spartan-b ;
+    font-size: larger;
+    color: rgb(238, 237, 237);
+}
+
+
+.html {
+    background: url('./images/html\ image.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.html-2 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all ease-in-out 0.3s;
+}
+
+.html-2:hover {
+    color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.css {
+    background: url('./images/css\ image.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.css-2 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all ease-in-out 0.3s;
+}
+
+.css-2:hover {
+    color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.js {
+    background: url('./images/JS\ image.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.js-2 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all ease-in-out 0.3s;
+}
+
+.js-2:hover {
+    color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.ts {
+    background: url('./images/typescript\ image.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ts-2 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all ease-in-out 0.3s;
+}
+
+.ts-2:hover {
+    color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.react {
+    background: url('./images/react\ image.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.react-2 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all ease-in-out 0.3s;
+}
+
+.react-2:hover {
+    color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.ps {
+    background: url('./images/photoshop\ image.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ps-2 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all ease-in-out 0.3s;
+}
+
+.ps-2:hover {
+    color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.git {
+    background: url('./images/github\ image.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.git-2 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all ease-in-out 0.3s;
+}
+
+.git-2:hover {
+    color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0.1);
+}

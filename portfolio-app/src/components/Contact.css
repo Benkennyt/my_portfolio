@@ -1,0 +1,116 @@
+.contact {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url('./images/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.contact-container h1{
+    color: white;
+    font-family: Spartan-b;
+}
+
+.contact-container p {
+    color: white;
+    font-family: Spartan-r;
+}
+
+.mail-button {
+    position: relative;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.main-button {
+    
+    border: 3px solid white;
+    background-color: transparent;
+    height: 50px;
+    margin-top: 50px;
+    color: white;
+    cursor:pointer;
+}
+
+.main-button:hover {
+    margin-top: 45px;
+}
+
+.main-button:active {
+    background-color: white;
+    color: black;
+}
+
+.myfooter {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.myfooter p {
+    color: white;
+}
+
+.myfooter p span {
+    font-weight: 900;
+}
+
+.socials {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    
+    display: block;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.socials a {
+   width: 40px;
+   height: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+
+}
+
+.socials a img {
+    width: 30px;
+    height: 30px;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    transition: all ease-in-out 0.3s;
+}
+
+.socials a img:hover {
+    margin-bottom: 10px;
+    box-shadow:  rgba(0, 0, 0, 0.8) 0 0 100px 20px;
+
+}
+
+
+.line-container {
+    width: 40px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.line {
+    width: 1px;
+    height: 150px;
+    background-color: white;
+}

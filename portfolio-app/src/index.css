@@ -1,0 +1,65 @@
+:root {
+  --primary-color: #fff;
+  --primary-color-dark: #f9f6f2 ;
+  --secondaru-color: #e2e2e2;
+  --secondary-color-dark: #d1d1d1;
+
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: Spartan-r;
+  src: url(./components/fonts/LeagueSpartan-Regular.ttf);
+}
+
+@font-face {
+  font-family: Spartan-b;
+  src: url(./components/fonts/LeagueSpartan-Bold.ttf);
+}
+
+@font-face {
+  font-family: Spartan-m;
+  src: url(./components/fonts/LeagueSpartan-Medium.ttf);
+}
+
+@font-face {
+  font-family: Spartan-l;
+  src: url(./components/fonts/LeagueSpartan-Light.ttf);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.quote {
+  font-size: 16px;
+  max-width: 650px;
+  font-family: Spartan-l;
+  line-height: 1.7;
+  position: absolute;
+  bottom: 0;
+  
+}
+
+h2 {
+  font-family: Spartan-r;
+}
+
+button {
+  font-family: Spartan-r;
+  font-size: 16px;
+}
+

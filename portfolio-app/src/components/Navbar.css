@@ -7,17 +7,40 @@
     z-index: 1;
     transition: .3s ease-in;
     overflow: hidden;
-
+    z-index: 2;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1240px;
+    width: 100%;
+    max-width: 1400px;
     margin:auto;
     height: 100%;
     padding:  0 1rem;
+    transition:all 1s ease ;
+    -webkit-transition: all 1s ease ;
+}
+
+
+.navbar-black {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    max-width: 1400px;
+    margin:auto;
+    height: 100%;
+    padding:  0 1rem;
+    background-color: rgba(0, 0, 0, 1);
+    transition:all 1s ease ;
+    -webkit-transition: all 1s ease ;
+}
+
+.navbar-black {
+    background-color: rgba(0, 0, 0, 0.816);
 }
 
 .navbar a:link {
@@ -26,31 +49,43 @@
 
  .nav-menu {
     display: flex;
+    margin-right: 50px;
+    
 }
 
  .nav-item a {
     padding: 1rem;
     font-weight:  500;
     transition: all .4s ease-in-out;
-    color: rgb(244, 243, 243);
     font-family: Spartan-m;
+    color: white;
 }
 
-.nav-item a:hover {
+
+
+.nav-item a:hover{
+    font-size:20px ;
+    letter-spacing: 3px;
+}
+
+.now-active {
     font-size:20px ;
     letter-spacing: 3px;
 }
 
 .logo1 {
     width: 95px;
+    margin-top: 3px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    transition: all .4s ease-in-out;
 }
 
 .logo2 {
     width: 95px;
+    margin-top: 3px;
     position: absolute;
-    left: 20px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    left: 16px;
+    transition: all .4s ease-in-out;
 }
 
 .hamburger {

@@ -1,22 +1,35 @@
 import React from 'react';
+import { animateScroll } from 'react-scroll';
 import './Contact.css';
 import TwitterIcon from './images/x-twitter.svg';
 import LinkedinIcon from './images/linkedin.svg';
 import InstagramIcon from './images/instagram.svg';
 import GithubIcon from './images/github-square.svg';
+import TopIcon from './images/to the top.png';
 
-const Contact = () => {
+
+const Contact = (props: any) => {
+    const options = {
+        smooth: true,
+        duration:1500,
+        delay: 500
+    }
   return (
-    <div className='contact'>
+    <div className='contact' id='contact' ref={props.innerRef}>
         <div className='contact-container'>
             <h1>Reach out to me</h1>
-            <p>Feel free to reach out to me if you have any inquiries or opportunities you'd like to discuss further</p>
+            <p className='message'>Feel free to reach out to me if you have any inquiries or opportunities you'd like to discuss further</p>
             <div className='mail-button'>
                 <a href="mailto:kehindetemitayo.b@gmail.com">
                     <button className='main-button' >Drop a Message</button>
                 </a>
             </div>
             <p className='last-quote'>"Just for today, smile a little more" &#128522;</p>
+
+            <button onClick={() => {animateScroll.scrollToTop(options)}} className='to-the-top'>
+                <img className='top-icon-image' src={TopIcon} alt="to-the-top" />
+                <p className='take-me'>Take me to the top</p>
+            </button>
             <div className='footer'>
                 <div className='myfooter'>
                     <p>Made by Yours truly <span>Benkenny</span>  &#128522;  2023</p>

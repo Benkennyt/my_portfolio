@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 680px;
 }
 
 
@@ -17,7 +18,7 @@
     font-family: Spartan-b;
 }
 
-.contact-container p {
+.message {
     color: white;
     font-family: Spartan-r;
 }
@@ -113,4 +114,49 @@
     width: 1px;
     height: 150px;
     background-color: white;
+}
+
+.last-quote {
+    color: white;
+}
+
+.to-the-top {
+    border: none;
+    width: 100px;
+    height: 150px;
+    background-color: transparent;
+}
+
+.take-me {
+  
+    color: rgba(0, 0, 0, 0) ;
+    transition: all 0.3s ease-in ;
+}
+
+.to-the-top:hover {
+    .take-me {
+        color: white;
+    }
+}
+
+.to-the-top:active{
+    .top-icon-image {
+        animation: rise .1s ease-in-out infinite ;
+    }
+}
+
+.top-icon-image{
+    filter: invert(100%);
+    animation: moving 2s ease-in-out infinite ;
+}
+
+@keyframes moving {
+    0% {transform: translateY(0%);}
+    50%{transform: translateY(-60%);}
+    
+}
+
+@keyframes rise {
+    0% {transform: translateY(0%);}
+    50%{transform: translateY(-60%);}
 }

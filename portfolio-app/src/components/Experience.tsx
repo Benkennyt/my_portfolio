@@ -1,14 +1,28 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './Experience.css'
 
-const Experience = () => {
+const Experience = (props: any) => {
+    const {innerRef, activeElement} = props
+
+   const [activeTrue, setActiveTrue] = useState(false)
+    console.log(activeTrue)
+
+
+  useEffect(() => {
+  if (activeElement === 'experience') {
+      setActiveTrue(true)
+  };
+  }, [activeElement])
+  
   return (
-    <div className='experience'>
+    <div className='experience' id='experience' ref={innerRef}>
         <div className='experience-container'>
-          <h1>Experience</h1>
+            <div className={activeTrue ? 'slide-in-exp' : 'hide'}>
+                <h1>Experience</h1>
+            </div>
           <div className='experience-details'>
             <div className='experience-details-1'>
-                <h2>My Experience</h2>
+                <h2 >My Experience</h2>
                 <p>I currently have a year of experience in web development, and a perpetual enthusiasm to expand my knowledge in thr ever-evolving industry</p>
             </div>
 

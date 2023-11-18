@@ -69,7 +69,7 @@
     transform: translateY(-123%);
     -webkit-transform: translateY(-123%);
     animation: slideInDown 5s ease forwards 3s;
-    -webkit-animation: slideInDown 5s ease forwards 1s;
+    -webkit-animation: slideInDown 5s ease forwards;
     z-index: 0;
     
 }
@@ -84,7 +84,7 @@
     transform: translateY(-123%);
     -webkit-transform: translateY(-123%);
     animation: slideInDown 5s ease forwards 3s;
-    -webkit-animation: slideInDown 5s ease forwards 1s;
+    -webkit-animation: slideInDown 5s ease forwards ;
     z-index: 0;
 }
 

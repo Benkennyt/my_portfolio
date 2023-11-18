@@ -7,15 +7,24 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import { useInView } from 'react-intersection-observer';
+import ProjectDetails from './components/ProjectDetails';
 
 function App() {
-  const [activeElement, setActiveElement] = useState('')
+  const [activeElement, setActiveElement] = useState('hero');
 
-  const [isToggled, setIsToggled] = useState(false)
+  const [isToggled, setIsToggled] = useState(false);
 
+  const [projectId, setProjectId] = useState <string>('');
+
+  const [modalOpen, setModalOpen] = useState(false)
+
+  const handleModalClose = () => {
+    setModalOpen(false)
+    document.body.classList.remove('modalIsOpen')
+  }
 
   const {ref:ref, inView:inView} = useInView({
-     threshold:.5
+     threshold:.5,
   });
 
   const {ref:ref1, inView:inView1} = useInView({
@@ -59,12 +68,13 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar activeElement={activeElement}/>
-      <Hero innerRef={ref} isToggled={isToggled} onToggle={() => setIsToggled(!isToggled)}/>
-      <About innerRef={ref1} activeElement={activeElement}/>
-      <Experience innerRef={ref2} activeElement={activeElement}/>
-      <Projects innerRef={ref3} activeElement={activeElement}/>
-      <Contact innerRef={ref4}/>
+      {modalOpen && <ProjectDetails projectId={projectId} closeModal={handleModalClose} isToggled={isToggled}/>}
+      <Navbar activeElement={activeElement} isToggled={isToggled} onToggle={() => setIsToggled(!isToggled)}/>
+      <Hero innerRef={ref} isToggled={isToggled}/>
+      <About innerRef={ref1} activeElement={activeElement} isToggled={isToggled}/>
+      <Experience innerRef={ref2} activeElement={activeElement} isToggled={isToggled}/>
+      <Projects innerRef={ref3} activeElement={activeElement} setProjectId={setProjectId} setModalOpen={setModalOpen} isToggled={isToggled}/>
+      <Contact innerRef={ref4} isToggled={isToggled}/>
     </div>
   );
 }

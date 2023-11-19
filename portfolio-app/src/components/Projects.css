@@ -1,5 +1,5 @@
 .projects{
-    position: relative;
+   position: relative;
     min-height: 670px;
     width: 100%;
     background-color:  white;
@@ -7,7 +7,6 @@
     justify-content: center;
     align-items: center;
     min-height: 680px;
-    overflow-x: hidden;
 
 }
 

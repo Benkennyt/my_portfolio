@@ -44,23 +44,25 @@ const Contact = (props: any) => {
                 <div className='myfooter'>
                     <p className={isToggled ? 'footer-p-dark-mode' : ''}>Made by Yours truly <span>Benkenny</span>  &#128522;  2023</p>
                     <div className='socials'>
-                        <a href="https://x.com/BenKenny_T" target='_blank'>
-                            <img src={isToggled ? TwitterIconDarkMode :TwitterIcon} alt="" />
-                        </a>
+                        <div className='socials-1'>
+                            <a href="https://x.com/BenKenny_T" target='_blank'>
+                                <img src={isToggled ? TwitterIconDarkMode :TwitterIcon} alt="" />
+                            </a>
 
-                        <a href="https://www.linkedin.com/in/temitayo-kehinde-347a38185" target='_blank'>
-                            <img src={isToggled ? LinkedinIconDarkMode : LinkedinIcon} alt="" />
-                        </a>
+                            <a href="https://www.linkedin.com/in/temitayo-kehinde-347a38185" target='_blank'>
+                                <img src={isToggled ? LinkedinIconDarkMode : LinkedinIcon} alt="" />
+                            </a>
 
-                        <a href="https://instagram.com/iambenkenny" target='_blank'>
-                            <img src={isToggled ? InstagramIconDarkMode : InstagramIcon} alt="" />
-                        </a>
+                            <a href="https://instagram.com/iambenkenny" target='_blank'>
+                                <img src={isToggled ? InstagramIconDarkMode : InstagramIcon} alt="" />
+                            </a>
 
-                        <a  href="https://github.com/Benkennyt" target='_blank'>
-                            <img src={isToggled ? GithubIconDarkMode : GithubIcon} alt="" />
-                        </a>
-                        <div className='line-container'>
-                            <div className={isToggled ? 'line-dark-mode' : 'line'}></div>
+                            <a  href="https://github.com/Benkennyt" target='_blank'>
+                                <img src={isToggled ? GithubIconDarkMode : GithubIcon} alt="" />
+                            </a>
+                            <div className='line-container'>
+                                <div className={isToggled ? 'line-dark-mode' : 'line'}></div>
+                            </div>
                         </div>
                     </div>
                 </div>

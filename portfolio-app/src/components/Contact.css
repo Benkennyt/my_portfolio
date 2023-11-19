@@ -209,9 +209,17 @@
 
 @media (width <= 770px) {
     .socials {
+        width: 100%;
         display: flex;
-        bottom: 50px;
-        left: 20%;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        margin-bottom: 60px;
+       
+    }
+
+    .socials-1 {
+        display: flex;
     }
 
     .socials a {

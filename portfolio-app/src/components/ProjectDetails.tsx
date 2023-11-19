@@ -11,7 +11,7 @@ const ProjectDetails = (props: any) => {
         title: 'My Portfolios',
         details: 'Well, you are currently on it',
         github: 'https://github.com/Benkennyt/my_portfolio',
-        url:'www.github.com',
+        url:'https://my-portfolio-seven-livid-49.vercel.app/',
       }
     }else if (projectId === '2'){
       return {

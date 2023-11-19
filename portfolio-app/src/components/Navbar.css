@@ -225,7 +225,7 @@ label:active:after {
     }
 
     .nav-mode {
-        margin-right: 50%;
+        margin-right: 47%;
         margin-bottom: 10px;
     }
 
@@ -270,5 +270,11 @@ label:active:after {
     .nav-item-closed {
         display: none;
         transition: all ease-in-out .5s;
+    }
+}
+
+@media (width <= 300px) {
+    .nav-mode {
+        transform: translateX(-20%);
     }
 }

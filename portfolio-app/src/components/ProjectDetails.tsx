@@ -56,7 +56,7 @@ const ProjectDetails = (props: any) => {
     <div className='project-details'>
         <div className={isToggled ? 'project-details-container-dark-mode' : 'project-details-container'}>
           <div className={isToggled ? 'title-dark-mode' : 'title'}>
-            <h1>{ProjectInfo()?.title}</h1>
+            <h2>{ProjectInfo()?.title}</h2>
           </div>
           <div className={isToggled ? 'details-summary-dark-mode' : 'details-summary'}>
             <p>{ProjectInfo()?.details}</p>

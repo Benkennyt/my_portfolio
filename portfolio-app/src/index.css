@@ -9,6 +9,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 @font-face {
   font-family: Spartan-r;
   src: url(./components/fonts/LeagueSpartan-Regular.ttf);

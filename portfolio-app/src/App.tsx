@@ -68,13 +68,15 @@ function App() {
 
   return (
     <div className="App">
-      {modalOpen && <ProjectDetails projectId={projectId} closeModal={handleModalClose} isToggled={isToggled}/>}
-      <Navbar activeElement={activeElement} isToggled={isToggled} onToggle={() => setIsToggled(!isToggled)}/>
-      <Hero innerRef={ref} isToggled={isToggled}/>
-      <About innerRef={ref1} activeElement={activeElement} isToggled={isToggled}/>
-      <Experience innerRef={ref2} activeElement={activeElement} isToggled={isToggled}/>
-      <Projects innerRef={ref3} activeElement={activeElement} setProjectId={setProjectId} setModalOpen={setModalOpen} isToggled={isToggled}/>
-      <Contact innerRef={ref4} isToggled={isToggled}/>
+      <div className='container'>
+        {modalOpen && <ProjectDetails projectId={projectId} closeModal={handleModalClose} isToggled={isToggled}/>}
+        <Navbar activeElement={activeElement} isToggled={isToggled} onToggle={() => setIsToggled(!isToggled)}/>
+        <Hero innerRef={ref} isToggled={isToggled}/>
+        <About innerRef={ref1} activeElement={activeElement} isToggled={isToggled}/>
+        <Experience innerRef={ref2} activeElement={activeElement} isToggled={isToggled}/>
+        <Projects innerRef={ref3} activeElement={activeElement} setProjectId={setProjectId} setModalOpen={setModalOpen} isToggled={isToggled}/>
+        <Contact innerRef={ref4} isToggled={isToggled}/>
+      </div>
     </div>
   );
 }

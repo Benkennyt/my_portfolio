@@ -1,5 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import './Projects.css';
+import MyPortfolio from './images/my portfolio.png';
+import YoutubeClone from './images/youtube clone.png';
+import ExerciseApp from './images/workout app.png';
+import MultiStepFrom from './images/multi-step form.png';
+import Newsletter from './images/newsletter.png';
+import ThreeD from './images/3d shirt customizer.png';
 
 const Projects = (props: any) => {
   const {innerRef, activeElement, setProjectId, setModalOpen,isToggled} = props
@@ -62,43 +68,50 @@ const Projects = (props: any) => {
         <div className='projects-details'>
           <h2 className={isToggled ? 'dark-mode-h2': ''}>My Projects</h2>
           <div className='projects-container-2'>
+            {/* ssssssssssssss */}
             
-          <div className={isToggled ? 'portfolio-dark-mode project': 'portfolio project'}>
+            <div className={isToggled ? 'project-dark-mode': ' project'}>
+              <img className='project-image' src={MyPortfolio} alt="portfolio" />
               <button onClick={()=>CheckProjectId('1')} className='project-overlay'>
                 <h2>My Portfolio</h2>
                 <p>...read more</p>
               </button>
             </div>
 
-            <div className={isToggled ? 'yt-dark-mode project': 'yt project'}>
+            <div className={isToggled ? 'project-dark-mode': ' project'}>
+            <img className='project-image' src={YoutubeClone} alt="youtbube-clone" />
               <button onClick={()=>CheckProjectId('2')} className='project-overlay'>
                 <h2>Youtube Clone</h2>
                 <p>...read more</p>
               </button>
             </div>
 
-            <div className={isToggled ? 'shirt-dark-mode project': 'shirt project'}>
+            <div className={isToggled ? 'project-dark-mode': ' project'}>
+              <img className='project-image' src={ThreeD} alt="3D image" />
               <button onClick={()=>CheckProjectId('3')} className='project-overlay'>
                 <h2>3D Shirt Customizer</h2>
                 <p>...read more</p>
               </button>
             </div>
 
-            <div className={isToggled ? 'multi-step-form-dark-mode project': 'multi-step-form project'}>
+            <div className={isToggled ? 'project-dark-mode': ' project'}>
+              <img className='project-image' src={MultiStepFrom} alt="multi-step-form" />
               <button onClick={()=>CheckProjectId('4')} className='project-overlay'>
                 <h2>Multi-Step Form</h2>
                 <p>...read more</p>
               </button>
             </div>
 
-            <div className={isToggled ? 'exercise-dark-mode project': 'exercise project'}>
+            <div className={isToggled ? 'project-dark-mode': ' project'}>
+              <img className='project-image' src={ExerciseApp} alt="exercise-search-app" />
               <button onClick={()=>CheckProjectId('5')} className='project-overlay'>
                 <h2>Exercise Search App</h2>
                 <p>...read more</p>
               </button>
             </div>
 
-            <div className={isToggled ? 'newsletter-dark-mode project': 'newsletter project'}>
+            <div className={isToggled ? 'project-dark-mode': ' project'}>
+              <img className='project-image' src={Newsletter} alt="newsletter" />
               <button onClick={()=>CheckProjectId('6')} className='project-overlay'>
                 <h2>Newsletter Subscription Page</h2>
                 <p>...read more</p>

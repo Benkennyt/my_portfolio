@@ -82,7 +82,7 @@
     border-bottom: solid 2px rgb(182, 213, 72);
 }
 
-.title h1 {
+.title h2 {
     color: black;
     margin: 0;
     font-family: Spartan-b;
@@ -96,7 +96,7 @@
 
 
 .details-summary, .details-summary-dark-mode {
-    width: 60%;
+    width: 90%;
     margin: auto;
 }
 
@@ -212,4 +212,26 @@
 .project-details-footer-dark-mode button:hover {
     background-color:  rgb(182, 213, 72);
     color: #121212 ;
+}
+
+
+
+
+@media (width <= 770px) {
+    .project-details-container {
+        position: relative;
+        background-color: rgb(255, 255, 255);
+        width: 90%; 
+    }
+    
+    .project-details-container-dark-mode {
+        position: relative;
+        background-color: #121212;
+        width: 50%;
+        height: fit-content;
+        transform: translateY(-123%);
+        -webkit-transform: translateY(-123%);
+        animation: slideInDown .5s ease-in-out forwards ;
+        -webkit-animation: slideInDown .5s ease-in-out forwards ; 
+    }
 }

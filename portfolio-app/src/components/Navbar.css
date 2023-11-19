@@ -271,6 +271,18 @@ label:active:after {
         display: none;
         transition: all ease-in-out .5s;
     }
+
+       
+    .nav-item-dark-mode a {
+        display: block;
+       font-size: 25px;
+       transition: all ease-in-out .5s;
+    }
+    
+    .nav-item-closed {
+        display: none;
+        transition: all ease-in-out .5s;
+    }
 }
 
 @media (width <= 300px) {

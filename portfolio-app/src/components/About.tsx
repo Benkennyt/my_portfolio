@@ -35,7 +35,7 @@ const About = (props:any) => {
           </div>
           <div className={isToggled ? 'about-details-dark-mode' :'about-details'}>
             <img src={isToggled ? MyImageDarkMode : MyImage} alt="" />
-            <p className={isToggled ? 'details-dark-mode' : 'details'}>Hi! I'm Kehinde Temitayo, known as Benkenny. I'm a passionate self-taught web developer in love with frontend development and the thrilling challenges it brings. I love bringing ideas to life through engaging, user-friendly interfaces.
+            <p className={isToggled ? 'details-dark-mode' : 'details'}>Hi! I'm Kehinde Temitayo, also known as Benkenny. I'm a passionate self-taught web developer in love with frontend development and the thrilling challenges it brings. I love bringing ideas to life through engaging, user-friendly interfaces.
             Beyond coding, I find joy in playing piano, making music and playing games.
             </p>
           </div>

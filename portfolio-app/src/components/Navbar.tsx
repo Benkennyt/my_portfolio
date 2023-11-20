@@ -1,6 +1,5 @@
 import React, { useState, }  from 'react';
-import {FaBars, FaTimes} from 'react-icons/fa';
-import { Link, animateScroll } from 'react-scroll';
+import { Link} from 'react-scroll';
 import Logo1 from './images/white logo.png';
 import Logo2 from './images/white benkenny.png';
 import Logo3 from './images/white logo dark mode.png';

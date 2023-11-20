@@ -88,7 +88,7 @@
     font-family: Spartan-b;
 }
 
-.title-dark-mode h1 {
+.title-dark-mode h2 {
     color: #ccd6f6;
     margin: 0;
     font-family: Spartan-b;
@@ -227,11 +227,6 @@
     .project-details-container-dark-mode {
         position: relative;
         background-color: #121212;
-        width: 50%;
-        height: fit-content;
-        transform: translateY(-123%);
-        -webkit-transform: translateY(-123%);
-        animation: slideInDown .5s ease-in-out forwards ;
-        -webkit-animation: slideInDown .5s ease-in-out forwards ; 
+        width: 90%;
     }
 }

@@ -38,7 +38,7 @@ const Contact = (props: any) => {
 
             <button onClick={() => {animateScroll.scrollToTop(options)}} className='to-the-top'>
                 <img className='top-icon-image' src={isToggled ? TopIconDarkMode : TopIcon} alt="to-the-top" />
-                <p className='take-me'>Take me to the top!!</p>
+                <p className={isToggled ? 'take-me-dark-mode' : 'take-me'}>Take me to the top!!</p>
             </button>
             <div className='footer'>
                 <div className='myfooter'>

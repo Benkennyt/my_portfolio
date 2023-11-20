@@ -35,7 +35,7 @@ const Experience = (props: any) => {
 
                 <div className={isToggled ? 'experience-details-1-dark-mode' :'experience-details-1'}>
                     <h2>My Experience</h2>
-                    <p>I currently have a year of experience in web development, and a perpetual enthusiasm to expand my knowledge in thr ever-evolving industry</p>
+                    <p>I currently have a year of experience in web development, and a perpetual enthusiasm to expand my knowledge in the ever-evolving industry.</p>
                     <h2>My Skills</h2>
                 </div>
 

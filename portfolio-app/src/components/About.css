@@ -1,7 +1,6 @@
 .about{
     position: relative;
-    min-height: 670px;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color:  white;
     display: flex;
@@ -47,6 +46,7 @@
     -webkit-transform: translateX(-123%);
     animation: slideInLeft 5s ease forwards;
     -webkit-animation: slideInLeft 5s ease forwards;
+    left: 70px;
 
 }
 

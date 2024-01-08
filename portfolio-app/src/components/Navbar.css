@@ -2,9 +2,9 @@
     position: fixed;
     height: 90px;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1500px;
     top: 0;
-    left: 0;
+ 
     z-index: 1;
     transition: .3s ease-in;
     overflow: hidden;
@@ -16,7 +16,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1500px;
     margin:auto;
     height: 100%;
     padding:  0 1rem;
@@ -30,7 +30,7 @@
     align-items: center;
     position: absolute;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1500px;
     margin:auto;
     height: 100%;
     padding:  0 1rem;
@@ -66,29 +66,48 @@
 .nav-item a {
     padding: 1rem;
     font-weight:  500;
-    transition: all .4s ease-in-out;
+    transition: letter-spacing .4s ease-in-out;
     font-family: Spartan-m;
     color: white;
+    cursor: pointer;
 }
 
 .nav-item-dark-mode a {
     padding: 1rem;
     font-weight:  500;
-    transition: all .4s ease-in-out;
+    transition: letter-spacing .4s ease-in-out;
     font-family: Spartan-m;
     color: #ccd6f6;
 }
 
 
 
-.nav-item a:hover, .nav-item-dark-mode a:hover{
-    font-size:20px ;
+.nav-item a:hover{
     letter-spacing: 3px;
+    text-decoration: underline;
+    text-decoration-color: #ffcc89;
+    text-decoration-thickness: 2px;
 }
 
-.now-active {
-    font-size:20px ;
+.active {
     letter-spacing: 3px;
+    text-decoration: underline;
+    text-decoration-color: #d1d1d1;
+    text-decoration-thickness: 2px;
+}
+
+.nav-item-dark-mode a:hover{
+    letter-spacing: 3px;
+    text-decoration: underline;
+    text-decoration-color:rgb(182, 213, 72) ;
+    text-decoration-thickness: 2px;
+}
+
+.active-dark-mode {
+    letter-spacing: 3px;
+    text-decoration: underline;
+    text-decoration-color: rgb(182, 213, 72);
+    text-decoration-thickness: 2px;
 }
 
 .logo1 {

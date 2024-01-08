@@ -67,8 +67,8 @@
     min-height: 680px;
     transform: translateY(-123%);
     -webkit-transform: translateY(-123%);
-    animation: slideInDown 5s ease forwards 3s;
-    -webkit-animation: slideInDown 5s ease forwards;
+    animation: slideInDown 2s ease forwards ;
+    -webkit-animation: slideInDown 2s ease forwards;
     z-index: 0;
     
 }
@@ -82,8 +82,8 @@
     min-height: 680px;
     transform: translateY(-123%);
     -webkit-transform: translateY(-123%);
-    animation: slideInDown 5s ease forwards 3s;
-    -webkit-animation: slideInDown 5s ease forwards ;
+    animation: slideInDown 2s ease forwards ;
+    -webkit-animation: slideInDown 2s ease forwards ;
     z-index: 0;
 }
 

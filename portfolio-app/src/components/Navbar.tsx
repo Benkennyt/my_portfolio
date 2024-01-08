@@ -64,7 +64,7 @@ const Navbar = (props: any) => {
   return (
     <div className='header' >
         <nav  className={HandleDarkMode()}>
-            <Link  to="hero" spy={false} smooth={true} offset={0} duration={1500} delay={500} className='logo'>
+            <Link  to="hero" spy={false} smooth={true} offset={0} duration={700} delay={0} className='logo'>
                 <img className='logo1' src={ isToggled ? Logo3 :Logo1} alt='logo'/>
                 <img className='logo2' src={isToggled ? Logo4 : Logo2} alt='logo'/>
             </Link>
@@ -74,13 +74,13 @@ const Navbar = (props: any) => {
                 <ul className={navbarToggled ? 'nav-menu' : 'nav-menu-close'}>
                     <li className={HandleNavItem()}>
 
-                        <Link className={activeElement.activeElement === 'about' ? 'now-active' : 'not-active'} to="about" spy={false} smooth={true} offset={0} duration={1500} delay={500}>About</Link>
+                        <Link className={'not-active'} to="about" spy={true} smooth={true} offset={isToggled ? 0 : -90} duration={700} delay={0}>About</Link>
 
-                        <Link className={activeElement.activeElement === 'experience' ? 'now-active' : 'not-active'} to="experience" spy={false} smooth={true} offset={0} duration={1500} delay={500}>Experience</Link>
+                        <Link className={'not-active'} to="experience" spy={true} smooth={true} offset={isToggled ? 0 : -90} duration={700} delay={0}>Experience</Link>
 
-                        <Link className={activeElement.activeElement === 'projects' ? 'now-active' : 'not-active'} to="projects" spy={true} smooth={true} offset={0} duration={1500} delay={500}>Projects</Link>
+                        <Link className={'not-active'} to="projects" spy={true} smooth={true} offset={isToggled ? 0 : -90} duration={700} delay={0}>Projects</Link>
 
-                        <Link className={activeElement.activeElement === 'contact' ? 'now-active' : 'not-active'} to="contact" spy={true} smooth={true} offset={10} duration={1500} delay={500}>Connect with me </Link>
+                        <Link className={'not-active'} to="contact" spy={true} smooth={true} offset={isToggled ? 10 : -80} duration={700} delay={0}>Connect with me </Link>
                     </li>
                 </ul>
 

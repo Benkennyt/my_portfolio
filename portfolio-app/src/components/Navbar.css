@@ -78,6 +78,7 @@
     transition: letter-spacing .4s ease-in-out;
     font-family: Spartan-m;
     color: #ccd6f6;
+    cursor: pointer;
 }
 
 

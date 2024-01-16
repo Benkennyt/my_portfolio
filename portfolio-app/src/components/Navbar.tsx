@@ -60,11 +60,12 @@ const Navbar = (props: any) => {
             }
         }
     }
+
     
   return (
     <div className='header' >
         <nav  className={HandleDarkMode()}>
-            <Link  to="hero" spy={false} smooth={true} offset={0} duration={700} delay={0} className='logo'>
+            <Link onClick={HandleNavbarToggle}  to="hero" spy={false} smooth={true} offset={0} duration={700} delay={0} className='logo'>
                 <img className='logo1' src={ isToggled ? Logo3 :Logo1} alt='logo'/>
                 <img className='logo2' src={isToggled ? Logo4 : Logo2} alt='logo'/>
             </Link>
@@ -74,13 +75,13 @@ const Navbar = (props: any) => {
                 <ul className={navbarToggled ? 'nav-menu' : 'nav-menu-close'}>
                     <li className={HandleNavItem()}>
 
-                        <Link className={'not-active'} to="about" spy={true} smooth={true} offset={isToggled ? 0 : -90} duration={700} delay={0}>About</Link>
+                        <Link onClick={HandleNavbarToggle} className={'not-active'} to="about" spy={true} smooth={true} offset={isToggled ? 0 : -90} duration={700} delay={0}>About</Link>
 
-                        <Link className={'not-active'} to="experience" spy={true} smooth={true} offset={isToggled ? 0 : -90} duration={700} delay={0}>Experience</Link>
+                        <Link onClick={HandleNavbarToggle} className={'not-active'} to="experience" spy={true} smooth={true} offset={isToggled ? 0 : -90} duration={700} delay={0}>Experience</Link>
 
-                        <Link className={'not-active'} to="projects" spy={true} smooth={true} offset={isToggled ? 0 : -90} duration={700} delay={0}>Projects</Link>
+                        <Link onClick={HandleNavbarToggle} className={'not-active'} to="projects" spy={true} smooth={true} offset={isToggled ? 0 : -90} duration={700} delay={0}>Projects</Link>
 
-                        <Link className={'not-active'} to="contact" spy={true} smooth={true} offset={isToggled ? 10 : -80} duration={700} delay={0}>Connect with me </Link>
+                        <Link onClick={HandleNavbarToggle} className={'not-active'} to="contact" spy={true} smooth={true} offset={isToggled ? 10 : -80} duration={700} delay={0}>Connect with me </Link>
                     </li>
                 </ul>
 

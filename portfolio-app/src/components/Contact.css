@@ -1,6 +1,6 @@
 .contact {
     position: relative;
-    min-height: 100vh;
+    min-height: 100vh !important;
     width: 100%;
     background-image: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url('./images/background.jpg');
     background-size: cover;

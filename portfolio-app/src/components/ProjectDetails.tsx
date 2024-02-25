@@ -9,28 +9,28 @@ const ProjectDetails = (props: any) => {
     if (projectId === '1') {
       return {
         title: 'My Portfolios',
-        details: 'Developed a personal portfolio website showcasing projects and skills. Implemented a responsive design for optimal viewing across devices.',
+        details: 'Developed a personal portfolio website showcasing projects and skills. Implemented a responsive design for optimal viewing across devices.(App is designed to be responsive, adapting to both mobile and desktop views)',
         github: 'https://github.com/Benkennyt/my_portfolio',
         url:'https://kehindetemitayo.vercel.app/',
       }
     }else if (projectId === '2'){
       return {
         title: 'Storm Sculpt',
-          details: "I developed a weather application designed to deliver accurate and up-to-date weather information using REACT and free API from RAPID API. I focused on user-friendly design and real world functionality. Some of its key features are Current weather snapshot (e.g temperature, humidity, and wind speed), Geolocation, and a 3-day forcast. ",
+          details: "I developed a weather application designed to deliver accurate and up-to-date weather information using REACT and free API from RAPID API. I focused on user-friendly design and real world functionality. Some of its key features are Current weather snapshot (e.g temperature, humidity, and wind speed), Geolocation, and a 3-day forcast.(App is designed to be responsive, adapting to both mobile and desktop views) ",
           github: 'https://github.com/Benkennyt/storm_sculpt.git',
           url:'https://storm-sculpt.vercel.app/',
       }
     }else if (projectId === '3'){
       return {
         title: 'Youtube Clone',
-          details: "I created a Youtube clone using ReactJS, seemlessly blending user-friendly design with efficient functionality. I implemented features such as video or channel search bar, video playback ,and a dynamic video list. The app's responsive layout ensures seamless viewing experience across devices. ",
+          details: "I created a Youtube clone using ReactJS, seemlessly blending user-friendly design with efficient functionality. I implemented features such as video or channel search bar, video playback ,and a dynamic video list. The app's responsive layout ensures seamless viewing experience across devices.(App is not designed for mobile viewing) ",
           github: 'https://github.com/Benkennyt/youtube_clone',
           url:'https://youtube-clone-q5d5.vercel.app/',
       }
     } else if (projectId === '4') {
       return {
         title: 'Shirtzerr',
-        details: ' I developd a 3D shirt customizer using ReactJS, Three.js for the 3D rendering and OpenAI for the AI image generator. Users can interactively customize shirt designs in a realistic virtual environment. The AI component on request by the user creates images based on the prompt given. The customizer supports a wide range of options, including color section and image imports.',
+        details: ' I developd a 3D shirt customizer using ReactJS, Three.js for the 3D rendering and OpenAI for the AI image generator. Users can interactively customize shirt designs in a realistic virtual environment. The AI component on request by the user creates images based on the prompt given. The customizer supports a wide range of options, including color section and image imports.(App is designed to be responsive, adapting to both mobile and desktop views)',
         github: 'https://github.com/Benkennyt/3d_t-shirt_customizer',
         url:'https://shirtzerr.vercel.app//',
       }

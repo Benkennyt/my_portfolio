@@ -6,7 +6,8 @@ import ExerciseApp from './images/workout app.png';
 import MultiStepFrom from './images/multi-step form.png';
 import Newsletter from './images/newsletter.png';
 import ThreeD from './images/3d shirt customizer.png';
-import StormSculpt from './images/storm-sculpt.png'
+import StormSculpt from './images/storm-sculpt.png';
+import Geepay from './images/geepay.png'
 
 const Projects = (props: any) => {
   const {innerRef, activeElement, setProjectId, setModalOpen,isToggled} = props
@@ -50,6 +51,10 @@ const Projects = (props: any) => {
       setProjectId('7')
       setModalOpen(true)
       document.body.classList.add('modalIsOpen')
+    }else if (id === '8') {
+      setProjectId('8')
+      setModalOpen(true)
+      document.body.classList.add('modalIsOpen')
     }
   }
 
@@ -82,8 +87,16 @@ const Projects = (props: any) => {
             </div>
 
             <div className={isToggled ? 'project-dark-mode': ' project'}>
-            <img className={isToggled ? 'project-image-dark-mode'  : 'project-image'} src={StormSculpt} alt="storm-sculpt" />
+              <img className={isToggled ? 'project-image-dark-mode'  : 'project-image'} src={Geepay} alt="geegpay" />
               <button onClick={()=>CheckProjectId('2')} className={isToggled ? 'project-overlay-dark-mode' : 'project-overlay'}>
+                <h2>Geegpay Dashboard</h2>
+                <p>...read more</p>
+              </button>
+            </div>
+
+            <div className={isToggled ? 'project-dark-mode': ' project'}>
+            <img className={isToggled ? 'project-image-dark-mode'  : 'project-image'} src={StormSculpt} alt="storm-sculpt" />
+              <button onClick={()=>CheckProjectId('3')} className={isToggled ? 'project-overlay-dark-mode' : 'project-overlay'}>
                 <h2>Storm Sculpt</h2>
                 <p>...read more</p>
               </button>
@@ -91,7 +104,7 @@ const Projects = (props: any) => {
 
             <div className={isToggled ? 'project-dark-mode': ' project'}>
             <img className={isToggled ? 'project-image-dark-mode'  : 'project-image'} src={YoutubeClone} alt="youtbube-clone" />
-              <button onClick={()=>CheckProjectId('3')} className={isToggled ? 'project-overlay-dark-mode' : 'project-overlay'}>
+              <button onClick={()=>CheckProjectId('4')} className={isToggled ? 'project-overlay-dark-mode' : 'project-overlay'}>
                 <h2>Youtube Clone</h2>
                 <p>...read more</p>
               </button>
@@ -99,7 +112,7 @@ const Projects = (props: any) => {
 
             <div className={isToggled ? 'project-dark-mode': ' project'}>
               <img className={isToggled ? 'project-image-dark-mode'  : 'project-image'} src={ThreeD} alt="3D image" />
-              <button onClick={()=>CheckProjectId('4')} className={isToggled ? 'project-overlay-dark-mode' : 'project-overlay'}>
+              <button onClick={()=>CheckProjectId('5')} className={isToggled ? 'project-overlay-dark-mode' : 'project-overlay'}>
                 <h2>Shirtzerr</h2>
                 <p>...read more</p>
               </button>
@@ -107,7 +120,7 @@ const Projects = (props: any) => {
 
             <div className={isToggled ? 'project-dark-mode': ' project'}>
               <img className={isToggled ? 'project-image-dark-mode'  : 'project-image'} src={ExerciseApp} alt="exercise-search-app" />
-              <button onClick={()=>CheckProjectId('5')} className={isToggled ? 'project-overlay-dark-mode' : 'project-overlay'}>
+              <button onClick={()=>CheckProjectId('6')} className={isToggled ? 'project-overlay-dark-mode' : 'project-overlay'}>
                 <h2>VitalFit</h2>
                 <p>...read more</p>
               </button>
@@ -115,7 +128,7 @@ const Projects = (props: any) => {
 
             <div className={isToggled ? 'project-dark-mode': ' project'}>
               <img className={isToggled ? 'project-image-dark-mode'  : 'project-image'} src={MultiStepFrom} alt="multi-step-form" />
-              <button onClick={()=>CheckProjectId('6')} className={isToggled ? 'project-overlay-dark-mode' : 'project-overlay'}>
+              <button onClick={()=>CheckProjectId('7')} className={isToggled ? 'project-overlay-dark-mode' : 'project-overlay'}>
                 <h2>Multi-Step Form</h2>
                 <p>...read more</p>
               </button>
@@ -123,7 +136,7 @@ const Projects = (props: any) => {
 
             <div className={isToggled ? 'project-dark-mode': ' project'}>
               <img className={isToggled ? 'project-image-dark-mode'  : 'project-image'} src={Newsletter} alt="newsletter" />
-              <button onClick={()=>CheckProjectId('7')} className={isToggled ? 'project-overlay-dark-mode' : 'project-overlay'}>
+              <button onClick={()=>CheckProjectId('8')} className={isToggled ? 'project-overlay-dark-mode' : 'project-overlay'}>
                 <h2>Newsletter Subscription Page</h2>
                 <p>...read more</p>
               </button>

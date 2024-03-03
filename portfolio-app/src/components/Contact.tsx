@@ -42,7 +42,7 @@ const Contact = (props: any) => {
             </button>
             <div className='footer'>
                 <div className='myfooter'>
-                    <p className={isToggled ? 'footer-p-dark-mode' : ''}>Made by Yours truly <span>Benkenny</span>  &#128522;  2023</p>
+                    <p className={isToggled ? 'footer-p-dark-mode' : ''}>Made by Yours truly <span>Benkenny</span>  &#128522;  2024</p>
                     <div className='socials'>
                         <div className='socials-1'>
                             <a href="https://x.com/BenKenny_T" target='_blank'>

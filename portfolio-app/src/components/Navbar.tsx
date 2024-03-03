@@ -27,10 +27,8 @@ const Navbar = (props: any) => {
         }
     }
 
-    console.log(navbarToggled)
-
     const {activeElement, isToggled, onToggle,} = props
-    console.log(activeElement)
+
     const HandleDarkMode = () => {
         if (isToggled) {
           return  'navbar-dark-mode'

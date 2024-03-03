@@ -7,8 +7,6 @@ import MyImageDarkMode from './images/personimage-dark-mode.png';
 const Hero = (props:any) => {
 
   const {isToggled, innerRef} = props
-
-  console.log(isToggled)
     
   return (
     <div className={isToggled ? 'hero-dark-mode' :'hero'} id='hero' ref={innerRef}>
@@ -17,7 +15,7 @@ const Hero = (props:any) => {
         <img className='myimage' src={isToggled ? MyImageDarkMode : MyImage} alt='my-image'/>
         <div className={isToggled ? 'my-intro-dark-mode' : 'my-intro'}>
           <div className='name'>
-            <h1 >Kehinde Temitayo</h1>
+            <h1 >Kehinde Temitayo </h1>
             <p>Frontend Web Developer</p>
           </div>
         </div>

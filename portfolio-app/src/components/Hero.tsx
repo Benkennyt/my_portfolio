@@ -1,4 +1,3 @@
-import React from 'react';
 import './Hero.css';
 import MyImage from './images/personimage.png';
 import MyImageDarkMode from './images/personimage-dark-mode.png';

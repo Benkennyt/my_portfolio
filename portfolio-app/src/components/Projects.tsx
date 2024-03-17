@@ -1,13 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './Projects.css';
-import MyPortfolio from './images/my portfolio.png';
-import YoutubeClone from './images/youtube clone.png';
-import ExerciseApp from './images/workout app.png';
-import MultiStepFrom from './images/multi-step form.png';
-import Newsletter from './images/newsletter.png';
-import ThreeD from './images/3d shirt customizer.png';
-import StormSculpt from './images/storm-sculpt.png';
-import Geepay from './images/geepay.png'
+import { ProjectData } from './ProjectData';
 
 const Projects = (props: any) => {
   const {innerRef, activeElement, setProjectId, setModalOpen,isToggled} = props
@@ -22,40 +15,10 @@ const Projects = (props: any) => {
   };
   }, [activeElement])
 
-  const CheckProjectId = (id: string) => {
-    if (id === '1') {
-      setProjectId('1')
-      setModalOpen(true)
-      document.body.classList.add('modalIsOpen')
-    }else if (id === '2') {
-      setProjectId('2')
-      setModalOpen(true)
-      document.body.classList.add('modalIsOpen')
-    }else if (id === '3') {
-      setProjectId('3')
-      setModalOpen(true)
-      document.body.classList.add('modalIsOpen')
-    }else if (id === '4') {
-      setProjectId('4')
-      setModalOpen(true)
-      document.body.classList.add('modalIsOpen')
-    }else if (id === '5') {
-      setProjectId('5')
-      setModalOpen(true)
-      document.body.classList.add('modalIsOpen')
-    }else if (id === '6') {
-      setProjectId('6')
-      setModalOpen(true)
-      document.body.classList.add('modalIsOpen')
-    }else if (id === '7') {
-      setProjectId('7')
-      setModalOpen(true)
-      document.body.classList.add('modalIsOpen')
-    }else if (id === '8') {
-      setProjectId('8')
-      setModalOpen(true)
-      document.body.classList.add('modalIsOpen')
-    }
+  const CheckProjectId = (id: number) => {
+    setProjectId(id)
+    setModalOpen(true)
+    document.body.classList.add('modalIsOpen')
   }
 
   const HandleDarkModeProjects = () => {
@@ -77,73 +40,17 @@ const Projects = (props: any) => {
         </div>
         <div className='projects-details'>
           <h2 className={isToggled ? 'dark-mode-h2-project': 'h2-project'}>My Projects</h2>
+          
           <div className='projects-container-2'>
-            <div className={isToggled ? 'project-dark-mode': ' project'}>
-              <img className={isToggled ? 'project-image-dark-mode'  : 'project-image'} src={MyPortfolio} alt="portfolio" />
-              <button onClick={()=>CheckProjectId('1')} className={isToggled ? 'project-overlay-dark-mode' : 'project-overlay'}>
-                <h2>My Portfolio</h2>
+            { ProjectData.map((data, index) => 
+            <div key={index} className={isToggled ? 'project-dark-mode': ' project'}>
+              <img className={isToggled ? 'project-image-dark-mode'  : 'project-image'} src={data.image} alt="portfolio" />
+              <button onClick={()=>CheckProjectId(index)} className={isToggled ? 'project-overlay-dark-mode' : 'project-overlay'}>
+                <h2>{data.title}</h2>
                 <p>...read more</p>
               </button>
+              </div>)}
             </div>
-
-            <div className={isToggled ? 'project-dark-mode': ' project'}>
-              <img className={isToggled ? 'project-image-dark-mode'  : 'project-image'} src={Geepay} alt="geegpay" />
-              <button onClick={()=>CheckProjectId('2')} className={isToggled ? 'project-overlay-dark-mode' : 'project-overlay'}>
-                <h2>Geegpay Dashboard</h2>
-                <p>...read more</p>
-              </button>
-            </div>
-
-            <div className={isToggled ? 'project-dark-mode': ' project'}>
-            <img className={isToggled ? 'project-image-dark-mode'  : 'project-image'} src={StormSculpt} alt="storm-sculpt" />
-              <button onClick={()=>CheckProjectId('3')} className={isToggled ? 'project-overlay-dark-mode' : 'project-overlay'}>
-                <h2>Storm Sculpt</h2>
-                <p>...read more</p>
-              </button>
-            </div>
-
-            <div className={isToggled ? 'project-dark-mode': ' project'}>
-            <img className={isToggled ? 'project-image-dark-mode'  : 'project-image'} src={YoutubeClone} alt="youtbube-clone" />
-              <button onClick={()=>CheckProjectId('4')} className={isToggled ? 'project-overlay-dark-mode' : 'project-overlay'}>
-                <h2>Youtube Clone</h2>
-                <p>...read more</p>
-              </button>
-            </div>
-
-            <div className={isToggled ? 'project-dark-mode': ' project'}>
-              <img className={isToggled ? 'project-image-dark-mode'  : 'project-image'} src={ThreeD} alt="3D image" />
-              <button onClick={()=>CheckProjectId('5')} className={isToggled ? 'project-overlay-dark-mode' : 'project-overlay'}>
-                <h2>Shirtzerr</h2>
-                <p>...read more</p>
-              </button>
-            </div>
-
-            <div className={isToggled ? 'project-dark-mode': ' project'}>
-              <img className={isToggled ? 'project-image-dark-mode'  : 'project-image'} src={ExerciseApp} alt="exercise-search-app" />
-              <button onClick={()=>CheckProjectId('6')} className={isToggled ? 'project-overlay-dark-mode' : 'project-overlay'}>
-                <h2>VitalFit</h2>
-                <p>...read more</p>
-              </button>
-            </div>
-
-            <div className={isToggled ? 'project-dark-mode': ' project'}>
-              <img className={isToggled ? 'project-image-dark-mode'  : 'project-image'} src={MultiStepFrom} alt="multi-step-form" />
-              <button onClick={()=>CheckProjectId('7')} className={isToggled ? 'project-overlay-dark-mode' : 'project-overlay'}>
-                <h2>Multi-Step Form</h2>
-                <p>...read more</p>
-              </button>
-            </div>
-
-            <div className={isToggled ? 'project-dark-mode': ' project'}>
-              <img className={isToggled ? 'project-image-dark-mode'  : 'project-image'} src={Newsletter} alt="newsletter" />
-              <button onClick={()=>CheckProjectId('8')} className={isToggled ? 'project-overlay-dark-mode' : 'project-overlay'}>
-                <h2>Newsletter Subscription Page</h2>
-                <p>...read more</p>
-              </button>
-            </div>
-            
-          </div>
-
         </div>
         <div className='quote-container'>
 

@@ -8,7 +8,7 @@ export const ProjectData = [
     {
         title: 'Task Bender',
         image: TaskBender,
-        details: "I built a full stack To-Do app using React and Django to help users manage tasks and projects. The app features secure user authentication, allowing users to sign up, log in, and log out. Users can create and delete boards, add and delete tasks and subtasks, and organize tasks by categorizing them as To-Do, Overdue, In Progress, or Complete. On the front end, I utilized React, Redux, and CSS for a responsive and dynamic user interface. The back end is powered by Django and Django REST Framework, with SQLite used for development and PostgreSQL for production.",
+        details: "I built a full stack To-Do app using React and Django to help users manage tasks and projects. The app features secure user authentication, allowing users to sign up, log in, and log out. Users can create and delete boards, add and delete tasks and subtasks, and organize tasks by categorizing them as To-Do, Overdue, In Progress, or Complete. On the front end, I utilized React, Redux, and CSS for a responsive and dynamic user interface. The back end is powered by Django and Django REST Framework, with SQLite used for development and PostgreSQL for production. Please note that the server might be slow as it is hosted on a free-tier service.",
         github: 'https://github.com/Benkennyt/task_manager/',
         url:'https://task-manager-sepia-eta.vercel.app/'
     },

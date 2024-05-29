@@ -1,19 +1,16 @@
-import MyPortfolio from './images/my portfolio.png';
-import YoutubeClone from './images/youtube clone.png';
+import TaskBender from './images/taskbenderimg.png';
 import ExerciseApp from './images/workout app.png';
-import MultiStepFrom from './images/multi-step form.png';
-import Newsletter from './images/newsletter.png';
 import ThreeD from './images/3d shirt customizer.png';
 import StormSculpt from './images/storm-sculpt.png';
 import Geepay from './images/geepay.png'
 
 export const ProjectData = [
     {
-        title: 'My Portfolio',
-        image: MyPortfolio,
-        details: 'Developed a personal portfolio website showcasing projects and skills. Implemented a responsive design for optimal viewing across devices.(App is designed to be responsive, adapting to both mobile and desktop views)',
-        github: 'https://github.com/Benkennyt/my_portfolio',
-        url:'https://kehindetemitayo.vercel.app/'
+        title: 'Task Bender',
+        image: TaskBender,
+        details: "I built a full stack To-Do app using React and Django to help users manage tasks and projects. The app features secure user authentication, allowing users to sign up, log in, and log out. Users can create and delete boards, add and delete tasks and subtasks, and organize tasks by categorizing them as To-Do, Overdue, In Progress, or Complete. On the front end, I utilized React, Redux, and CSS for a responsive and dynamic user interface. The back end is powered by Django and Django REST Framework, with SQLite used for development and PostgreSQL for production.",
+        github: 'https://github.com/Benkennyt/task_manager/',
+        url:'https://task-manager-sepia-eta.vercel.app/'
     },
     {
         title: 'Geegpay Dashboard Challenge',
@@ -30,13 +27,6 @@ export const ProjectData = [
         url:'https://storm-sculpt.vercel.app/',
     },
     {
-        title: 'Youtube Clone',
-        image: YoutubeClone,
-        details: "I created a Youtube clone using ReactJS, seemlessly blending user-friendly design with efficient functionality. I implemented features such as video or channel search bar, video playback ,and a dynamic video list. The app's responsive layout ensures seamless viewing experience across devices.(App is not designed for mobile viewing) ",
-        github: 'https://github.com/Benkennyt/youtube_clone',
-        url:'https://youtube-clone-q5d5.vercel.app/',
-    },
-    {
         title: 'Shirtzerr',
         image: ThreeD,
         details: ' I developd a 3D shirt customizer using ReactJS, Three.js for the 3D rendering and OpenAI for the AI image generator. Users can interactively customize shirt designs in a realistic virtual environment. The AI component on request by the user creates images based on the prompt given. The customizer supports a wide range of options, including color section and image imports.(App is designed to be responsive, adapting to both mobile and desktop views)',
@@ -50,20 +40,6 @@ export const ProjectData = [
         github: 'https://github.com/Benkennyt/gym_exercises',
         url:'https://vitalfitapp.vercel.app/',
     },
-    {
-        title: 'Multi-Step-Form',
-        image: MultiStepFrom,
-        details: 'I created a user-friendly multistep form. The form is divided into several steps, guiding users through seemless journey',
-        github: 'https://github.com/Benkennyt/multi-step-form',
-        url:'https://multi-step-form-olive-three.vercel.app/',
-    },
-    {
-        title: 'Newsletter Subscription Page',
-        image: Newsletter,
-        details: ' A functional subscription page',
-        github: 'https://github.com/Benkennyt/newsletter-sign-up-page',
-        url:'https://newsletter-sign-up-page-seven.vercel.app/',
-    }
 ]
 
 

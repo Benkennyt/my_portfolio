@@ -15,7 +15,7 @@ const Hero = (props:any) => {
         <div className={isToggled ? 'my-intro-dark-mode' : 'my-intro'}>
           <div className='name'>
             <h1 >Kehinde Temitayo </h1>
-            <p>Frontend Web Developer</p>
+            <p>Full Stack Web Developer</p>
           </div>
         </div>
     </div>

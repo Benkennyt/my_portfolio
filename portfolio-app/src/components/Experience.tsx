@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './Experience.css';
-import MyResume from "./documents/Benkenny'sFrontendResume.pdf"
+import MyResume from "./documents/TEMITAYO KEHINDE Full stack resume.pdf"
 
 const Experience = (props: any) => {
     const {innerRef, activeElement, isToggled} = props
@@ -44,7 +44,7 @@ const Experience = (props: any) => {
 
                     <div className={isToggled ? 'skills-dark-mode' :'skills'}>
                         <div className='skills-1 html'>
-                            <div className={isToggled ? 'html-2-dark-mode' : 'html-2'}>
+                            <div className={isToggled ? 'skills-2-dark-mode' : 'skills-2'}>
                                 <h3>HTML</h3>
                             </div>
                         </div>
@@ -52,7 +52,7 @@ const Experience = (props: any) => {
 
                     <div className={isToggled ? 'skills-dark-mode' :'skills'}>
                         <div className='skills-1 css'>
-                            <div className={isToggled ? 'css-2-dark-mode' : 'css-2'}>  
+                            <div className={isToggled ? 'skills-2-dark-mode' : 'skills-2'}>  
                                 <h3>CSS</h3>
                             </div>
                         </div>
@@ -60,7 +60,7 @@ const Experience = (props: any) => {
 
                     <div className={isToggled ? 'skills-dark-mode' :'skills'}>
                         <div className='skills-1 js'>
-                            <div className={isToggled ? 'js-2-dark-mode' : 'js-2'}>
+                            <div className={isToggled ? 'skills-2-dark-mode' : 'skills-2'}>
                                 <h3>JS</h3>   
                             </div>
                         </div>
@@ -68,7 +68,7 @@ const Experience = (props: any) => {
 
                     <div className={isToggled ? 'skills-dark-mode' :'skills'}>
                         <div className='skills-1 ts'>
-                            <div className={isToggled ? 'ts-2-dark-mode' : 'ts-2'}>
+                            <div className={isToggled ? 'skills-2-dark-mode' : 'skills-2'}>
                                 <h3>TS</h3>  
                             </div>
                         </div>
@@ -76,7 +76,7 @@ const Experience = (props: any) => {
 
                     <div className={isToggled ? 'skills-dark-mode' :'skills'}>
                         <div className='skills-1 react'>
-                            <div className={isToggled ? 'react-2-dark-mode' : 'react-2'}>
+                            <div className={isToggled ? 'skills-2-dark-mode' : 'skills-2'}>
                                 <h3>React JS</h3>                          
                             </div>
                         </div>
@@ -84,7 +84,7 @@ const Experience = (props: any) => {
 
                     <div className={isToggled ? 'skills-dark-mode' :'skills'}>
                         <div className='skills-1 ps'>
-                            <div className={isToggled ? 'ps-2-dark-mode' : 'ps-2'}>
+                            <div className={isToggled ? 'skills-2-dark-mode' : 'skills-2'}>
                                 <h3>PS</h3>                           
                             </div>
                         </div>
@@ -92,8 +92,24 @@ const Experience = (props: any) => {
 
                     <div className={isToggled ? 'skills-dark-mode' :'skills'}>
                         <div className='skills-1 git'>
-                            <div className={isToggled ? 'git-2-dark-mode' : 'git-2'}>
+                            <div className={isToggled ? 'skills-2-dark-mode' : 'skills-2'}>
                                 <h3>GitHub</h3>    
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div className={isToggled ? 'skills-dark-mode' :'skills'}>
+                        <div className='skills-1 python'>
+                            <div className={isToggled ? 'skills-2-dark-mode' : 'skills-2'}>
+                                <h3>Python</h3>    
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div className={isToggled ? 'skills-dark-mode' :'skills'}>
+                        <div className='skills-1 django'>
+                            <div className={isToggled ? 'skills-2-dark-mode' : 'skills-2'}>
+                                <h3>Django</h3>    
                             </div>
                         </div>
                     </div> 

@@ -155,16 +155,9 @@ display: none;
     font-family: Spartan-b ;
     font-size: larger;
     color: rgb(238, 237, 237);
-} 
+}
 
-
- .html {
-    background: url('./images/html\ image.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-} 
-
- .html-2 {
+ .skills-2 {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -176,12 +169,12 @@ display: none;
     transition: all ease-in-out 0.3s;
 } 
 
- .html-2:hover, .html-2-dark-mode:hover {
+ .skills-2:hover, .skills-2-dark-mode:hover {
     color: rgba(255, 255, 255, 0);
     background-color: rgba(0, 0, 0, 0.1);
 } 
 
- .html-2-dark-mode {
+ .skills-2-dark-mode {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -194,6 +187,11 @@ display: none;
     color: #ccd6f6;
 } 
 
+.html {
+    background: url('./images/html\ image.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+} 
 
  .css {
     background: url('./images/css\ image.png');
@@ -201,178 +199,27 @@ display: none;
     background-repeat: no-repeat;
 } 
 
- .css-2 {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.6);
-    transition: all ease-in-out 0.3s;
-} 
-
- .css-2:hover, .css-2-dark-mode:hover {
-    color: rgba(255, 255, 255, 0);
-    background-color: rgba(0, 0, 0, 0.1);
-} 
-
- .css-2-dark-mode {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.6);
-    transition: all ease-in-out 0.3s;
-    color: #ccd6f6;
-} 
-
  .js {
     background: url('./images/JS\ image.png');
     background-size: contain;
     background-repeat: no-repeat;
-} 
-
- .js-2 {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.6);
-    transition: all ease-in-out 0.3s;
-} 
-
- .js-2:hover, .js-2-dark-mode:hover {
-    color: rgba(255, 255, 255, 0);
-    background-color: rgba(0, 0, 0, 0.1);
-} 
-
- .js-2-dark-mode {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.6);
-    transition: all ease-in-out 0.3s;
-    color: #ccd6f6;
-} 
+}
 
  .ts {
     background: url('./images/typescript\ image.png');
     background-size: contain;
     background-repeat: no-repeat;
-} 
-
- .ts-2 {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.6);
-    transition: all ease-in-out 0.3s;
-} 
-
- .ts-2:hover, .ts-2-dark-mode:hover {
-    color: rgba(255, 255, 255, 0);
-    background-color: rgba(0, 0, 0, 0.1);
-} 
-
- .ts-2-dark-mode {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.6);
-    transition: all ease-in-out 0.3s;
-    color: #ccd6f6;
-} 
-
+}  
  .react {
     background: url('./images/react\ image.png');
     background-size: contain;
     background-repeat: no-repeat;
-} 
-
- .react-2 {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.6);
-    transition: all ease-in-out 0.3s;
-} 
-
- .react-2:hover, .react-2-dark-mode:hover {
-    color: rgba(255, 255, 255, 0);
-    background-color: rgba(0, 0, 0, 0.1);
-} 
-
- .react-2-dark-mode {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.6);
-    transition: all ease-in-out 0.3s;
-    color: #ccd6f6;
-} 
+}  
 
  .ps {
     background: url('./images/photoshop\ image.png');
     background-size: contain;
     background-repeat: no-repeat;
-} 
-
- .ps-2 {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.6);
-    transition: all ease-in-out 0.3s;
-} 
-
- .ps-2:hover, .ps-2-dark-mode:hover {
-    color: rgba(255, 255, 255, 0);
-    background-color: rgba(0, 0, 0, 0.1);
-} 
-
- .ps-2-dark-mode {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.6);
-    transition: all ease-in-out 0.3s;
-    color: #ccd6f6;
 } 
 
  .git {
@@ -381,36 +228,20 @@ display: none;
     background-repeat: no-repeat;
 } 
 
- .git-2 {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.6);
-    transition: all ease-in-out 0.3s;
-    
+.python {
+    background: url('./images/python.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 } 
 
- .git-2:hover, .git-2-dark-mode:hover {
-    color: rgba(255, 255, 255, 0);
-    background-color: rgba(0, 0, 0, 0.1);
+.django {
+    background: url('./images/django.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 } 
+ 
 
- .git-2-dark-mode {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.6);
-    transition: all ease-in-out 0.3s;
-    color: #ccd6f6;
-} 
+
 
 .resume button {
     border: 3px solid #121212;

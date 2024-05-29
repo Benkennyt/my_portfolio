@@ -39,7 +39,7 @@ const Projects = (props: any) => {
           <h1>Projects</h1>
         </div>
         <div className='projects-details'>
-          <h2 className={isToggled ? 'dark-mode-h2-project': 'h2-project'}>My Projects</h2>
+          <h2 className={isToggled ? 'dark-mode-h2-project': 'h2-project'}>Selected Projects</h2>
           
           <div className='projects-container-2'>
             { ProjectData.map((data, index) => 

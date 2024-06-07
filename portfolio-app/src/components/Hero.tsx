@@ -14,7 +14,7 @@ const Hero = (props:any) => {
         <img className='myimage' src={isToggled ? MyImageDarkMode : MyImage} alt='my-image'/>
         <div className={isToggled ? 'my-intro-dark-mode' : 'my-intro'}>
           <div className='name'>
-            <h1 >Kehinde Temitayo </h1>
+            <h1 >Temitayo Kehinde </h1>
             <p>Full Stack Web Developer</p>
           </div>
         </div>

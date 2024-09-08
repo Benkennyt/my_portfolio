@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './Experience.css';
-import MyResume from "./documents/TEMITAYO KEHINDE Full stack resume.pdf"
+import MyResume from "./documents/TEMITAYO KEHINDE Frontend resume1.pdf"
 
 const Experience = (props: any) => {
     const {innerRef, activeElement, isToggled} = props
@@ -35,7 +35,7 @@ const Experience = (props: any) => {
 
                 <div className={isToggled ? 'experience-details-1-dark-mode' :'experience-details-1'}>
                     <h2>My Experience</h2>
-                    <p>I currently have a year of experience in web development, and a perpetual enthusiasm to expand my knowledge in the ever-evolving industry.</p>
+                    <p>With one year of direct experience in website development. I am driven by a constant desire to learn and adapt to the latest trends and technology in the ever-changing landscape of the industry.</p>
                     <h2>My Skills</h2>
                 </div>
 

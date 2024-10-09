@@ -3,6 +3,8 @@ import ExerciseApp from './images/workout app.png';
 import ThreeD from './images/3d shirt customizer.png';
 import StormSculpt from './images/storm-sculpt.png';
 import Geepay from './images/geepay.png'
+import Whoneedsit from './images/whoneedsit.png'
+import Clearer from './images/clearer.png'
 
 export const ProjectData = [
     {
@@ -19,13 +21,13 @@ export const ProjectData = [
         github: 'https://github.com/Benkennyt/geepay_challenge',
         url:'https://geepay-challenge-benkenny.vercel.app/',
     },
-    {
-        title: 'Storm Sculpt',
-        image: StormSculpt,
-        details: "I developed a weather application designed to deliver accurate and up-to-date weather information using REACT and free API from RAPID API. I focused on user-friendly design and real world functionality. Some of its key features are Current weather snapshot (e.g temperature, humidity, and wind speed), Geolocation, and a 3-day forcast.(App is designed to be responsive, adapting to both mobile and desktop views) ",
-        github: 'https://github.com/Benkennyt/storm_sculpt.git',
-        url:'https://storm-sculpt.vercel.app/',
-    },
+    // {
+    //     title: 'Storm Sculpt',
+    //     image: StormSculpt,
+    //     details: "I developed a weather application designed to deliver accurate and up-to-date weather information using REACT and free API from RAPID API. I focused on user-friendly design and real world functionality. Some of its key features are Current weather snapshot (e.g temperature, humidity, and wind speed), Geolocation, and a 3-day forcast.(App is designed to be responsive, adapting to both mobile and desktop views) ",
+    //     github: 'https://github.com/Benkennyt/storm_sculpt.git',
+    //     url:'https://storm-sculpt.vercel.app/',
+    // },
     {
         title: 'Shirtzerr',
         image: ThreeD,
@@ -40,6 +42,21 @@ export const ProjectData = [
         github: 'https://github.com/Benkennyt/gym_exercises',
         url:'https://vitalfitapp.vercel.app/',
     },
+    {
+        title: 'Whoneedsit',
+        image: Whoneedsit,
+        details: "Whoneedsit is a Fullstack app (React and Django), where users can post items they no longer need or use. The app allows users to sign up, sign in, create and delete accounts, as well as create, delete, and update items. Additionally, users can engage in live chat through WebSockets. The backend is powered by Django REST Framework, with Redux managing the state on the frontend. For security, I used CryptoJS to encrypt local storage. Algolia is integrated for item search suggestions. The app is currently live, but it might be slow due to the free-tier hosting service.",
+        github: 'https://github.com/Benkennyt/whoneedsit',
+        url: 'https://whoneedsit.vercel.app/'
+    },
+    {
+        title: 'Clearer',
+        image: Clearer,
+        details: "I worked as the frontend developer on Clearer, a React-based web app.I implemented state management using Redux to ensure smooth user interactions and efficient data handling. The app is fully responsive, ensuring a seamless experience across mobile and desktop devices. ",
+        url: 'https://cleareroutsourcing.com/'
+    }
+
+
 ]
 
 

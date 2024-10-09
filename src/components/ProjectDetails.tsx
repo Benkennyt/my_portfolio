@@ -1,13 +1,18 @@
 import './ProjectDetails.css';
 import { ProjectData } from './ProjectData';
+import { useRef } from 'react';
+import useClickOutside from '../Hooks/useClickOutside';
 
 
 const ProjectDetails = (props: any) => {
   const {projectId, closeModal, isToggled} = props
 
+  const contRef = useRef<HTMLDivElement>(null)
+  useClickOutside(contRef, closeModal)
+
   return (
     <div className='project-details'>
-      <div className={isToggled ? 'project-details-container-dark-mode' : 'project-details-container'}>
+      <div ref={contRef} className={isToggled ? 'project-details-container-dark-mode' : 'project-details-container'}>
         <div className={isToggled ? 'title-dark-mode' : 'title'}>
           <h2>{ProjectData[projectId].title}</h2>
         </div>

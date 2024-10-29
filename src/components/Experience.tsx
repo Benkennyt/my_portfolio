@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './Experience.css';
-import MyResume from "./documents/TEMITAYO KEHINDE Frontend resume1.pdf"
+import MyResume from "./documents/TEMITAYO KEHINDE frontend resume.pdf"
 
 const Experience = (props: any) => {
     const {innerRef, activeElement, isToggled} = props

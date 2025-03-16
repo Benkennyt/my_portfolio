@@ -82,6 +82,14 @@ const Experience = (props: any) => {
                         </div>
                     </div>
 
+                      <div className={isToggled ? 'skills-dark-mode' : 'skills'}>
+                          <div className='skills-1 next'>
+                              <div className={isToggled ? 'skills-2-dark-mode' : 'skills-2'}>
+                                  <h3>Next JS</h3>
+                              </div>
+                          </div>
+                      </div>
+
                     <div className={isToggled ? 'skills-dark-mode' :'skills'}>
                         <div className='skills-1 ps'>
                             <div className={isToggled ? 'skills-2-dark-mode' : 'skills-2'}>

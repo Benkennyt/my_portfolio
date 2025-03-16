@@ -214,7 +214,13 @@ display: none;
     background: url('./images/react\ image.png');
     background-size: contain;
     background-repeat: no-repeat;
-}  
+}
+
+ .next {
+     background: url('./images/next.png');
+     background-size: contain;
+     background-repeat: no-repeat;
+ }
 
  .ps {
     background: url('./images/photoshop\ image.png');

@@ -2,8 +2,15 @@
   text-align: center;
   position: relative;
   z-index: 0;
+  width: 100vw;
   max-width: 2200px;
   overflow-x: hidden;
+}
+
+@media (min-width: 2000px) {
+  .App{
+    width: 2000px;
+  }
 }
 
 .modalIsOpen {

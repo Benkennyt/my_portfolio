@@ -5,15 +5,28 @@ import StormSculpt from './images/storm-sculpt.png';
 import Geepay from './images/geepay.png'
 import Whoneedsit from './images/whoneedsit.png'
 import Clearer from './images/clearer.png'
+import ClearerPay from './images/clearerPay.png'
 
 export const ProjectData = [
     {
-        title: 'Task Bender',
-        image: TaskBender,
-        details: "I built a full stack To-Do app using React and Django to help users manage tasks and projects. The app features secure user authentication, allowing users to sign up, log in, and log out. Users can create and delete boards, add and delete tasks and subtasks, and organize tasks by categorizing them as To-Do, Overdue, In Progress, or Complete. On the front end, I utilized React, Redux, and CSS for a responsive and dynamic user interface. The back end is powered by Django and Django REST Framework, with SQLite used for development and PostgreSQL for production. Please note that the server might be slow as it is hosted on a free-tier service.",
-        github: 'https://github.com/Benkennyt/task_manager/',
-        url:'https://task-manager-sepia-eta.vercel.app/'
+        title: 'ClearerPay',
+        image: ClearerPay,
+        details: "ClearerPay is a payment processing web app built with Next.js. I took ownership of the frontend development, implementing core features such as dashboards, forms, data tables, and custom UI components. I also structured and maintained the project architecture, ensuring scalability and maintainability. State management is handled with Redux, and I focused on building a responsive, user-friendly interface that provides a smooth experience across devices. The app is actively evolving based on business needs and user feedback.",
+        url: 'https://clearerpay.com/'
     },
+    {
+        title: 'Clearer',
+        image: Clearer,
+        details: "I worked as the frontend developer on Clearer, a React-based web app.I implemented state management using Redux to ensure smooth user interactions and efficient data handling. The app is fully responsive, ensuring a seamless experience across mobile and desktop devices. ",
+        url: 'https://cleareroutsourcing.com/'
+    },
+    // {
+    //     title: 'Task Bender',
+    //     image: TaskBender,
+    //     details: "I built a full stack To-Do app using React and Django to help users manage tasks and projects. The app features secure user authentication, allowing users to sign up, log in, and log out. Users can create and delete boards, add and delete tasks and subtasks, and organize tasks by categorizing them as To-Do, Overdue, In Progress, or Complete. On the front end, I utilized React, Redux, and CSS for a responsive and dynamic user interface. The back end is powered by Django and Django REST Framework, with SQLite used for development and PostgreSQL for production. Please note that the server might be slow as it is hosted on a free-tier service.",
+    //     github: 'https://github.com/Benkennyt/task_manager/',
+    //     url:'https://task-manager-sepia-eta.vercel.app/'
+    // },
     {
         title: 'Geegpay Dashboard Challenge',
         image: Geepay,
@@ -28,33 +41,27 @@ export const ProjectData = [
     //     github: 'https://github.com/Benkennyt/storm_sculpt.git',
     //     url:'https://storm-sculpt.vercel.app/',
     // },
-    {
-        title: 'Shirtzerr',
-        image: ThreeD,
-        details: ' I developd a 3D shirt customizer using ReactJS, Three.js for the 3D rendering and OpenAI for the AI image generator. Users can interactively customize shirt designs in a realistic virtual environment. The AI component on request by the user creates images based on the prompt given. The customizer supports a wide range of options, including color section and image imports.(App is designed to be responsive, adapting to both mobile and desktop views)',
-        github: 'https://github.com/Benkennyt/3d_t-shirt_customizer',
-        url:'https://shirtzerr.vercel.app//',
-    },
-    {
-        title: 'VitalFit',
-        image: ExerciseApp,
-        details: " VitalFit is a web app that facilitates targeted workouts by selecting specific muscles. The app incorporates search bar for finding exercises by name and dynamycally updates the display based on the chosen muscles. Additionally, it seamlessly integrates with Youtube, providing instructional videos for each exercise to enhance the user's understanding and guidance.",
-        github: 'https://github.com/Benkennyt/gym_exercises',
-        url:'https://vitalfitapp.vercel.app/',
-    },
-    {
-        title: 'Whoneedsit',
-        image: Whoneedsit,
-        details: "Whoneedsit is a Fullstack app (React and Django), where users can post items they no longer need or use. The app allows users to sign up, sign in, create and delete accounts, as well as create, delete, and update items. Additionally, users can engage in live chat through WebSockets. The backend is powered by Django REST Framework, with Redux managing the state on the frontend. For security, I used CryptoJS to encrypt local storage. Algolia is integrated for item search suggestions. The app is currently live, but it might be slow due to the free-tier hosting service.",
-        github: 'https://github.com/Benkennyt/whoneedsit',
-        url: 'https://whoneedsit.vercel.app/'
-    },
-    {
-        title: 'Clearer',
-        image: Clearer,
-        details: "I worked as the frontend developer on Clearer, a React-based web app.I implemented state management using Redux to ensure smooth user interactions and efficient data handling. The app is fully responsive, ensuring a seamless experience across mobile and desktop devices. ",
-        url: 'https://cleareroutsourcing.com/'
-    }
+    // {
+    //     title: 'Shirtzerr',
+    //     image: ThreeD,
+    //     details: ' I developd a 3D shirt customizer using ReactJS, Three.js for the 3D rendering and OpenAI for the AI image generator. Users can interactively customize shirt designs in a realistic virtual environment. The AI component on request by the user creates images based on the prompt given. The customizer supports a wide range of options, including color section and image imports.(App is designed to be responsive, adapting to both mobile and desktop views)',
+    //     github: 'https://github.com/Benkennyt/3d_t-shirt_customizer',
+    //     url:'https://shirtzerr.vercel.app//',
+    // },
+    // {
+    //     title: 'VitalFit',
+    //     image: ExerciseApp,
+    //     details: " VitalFit is a web app that facilitates targeted workouts by selecting specific muscles. The app incorporates search bar for finding exercises by name and dynamycally updates the display based on the chosen muscles. Additionally, it seamlessly integrates with Youtube, providing instructional videos for each exercise to enhance the user's understanding and guidance.",
+    //     github: 'https://github.com/Benkennyt/gym_exercises',
+    //     url:'https://vitalfitapp.vercel.app/',
+    // },
+    // {
+    //     title: 'Whoneedsit',
+    //     image: Whoneedsit,
+    //     details: "Whoneedsit is a Fullstack app (React and Django), where users can post items they no longer need or use. The app allows users to sign up, sign in, create and delete accounts, as well as create, delete, and update items. Additionally, users can engage in live chat through WebSockets. The backend is powered by Django REST Framework, with Redux managing the state on the frontend. For security, I used CryptoJS to encrypt local storage. Algolia is integrated for item search suggestions. The app is currently live, but it might be slow due to the free-tier hosting service.",
+    //     github: 'https://github.com/Benkennyt/whoneedsit',
+    //     url: 'https://whoneedsit.vercel.app/'
+    // },
 
 
 ]

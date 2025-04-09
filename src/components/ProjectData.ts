@@ -6,6 +6,7 @@ import Geepay from './images/geepay.png'
 import Whoneedsit from './images/whoneedsit.png'
 import Clearer from './images/clearer.png'
 import ClearerPay from './images/clearerPay.png'
+import Frirosa from './images/frirosa.png'
 
 export const ProjectData = [
     {
@@ -27,6 +28,13 @@ export const ProjectData = [
     //     github: 'https://github.com/Benkennyt/task_manager/',
     //     url:'https://task-manager-sepia-eta.vercel.app/'
     // },
+    {
+        title: 'Frirosa – Bureau De Change Platform',
+        image: Frirosa,
+        details: 'I built the website for Frirosa, a licensed Bureau De Change offering currency exchange, diaspora remittance, and international payment settlement services across Africa. The site is fully responsive with smooth navigation across sections like Home, Services, About Us, and Contact, delivering a professional and intuitive experience for both individuals and businesses.',
+        github: '', 
+        url: 'https://frirosa.com',
+    },
     {
         title: 'Geegpay Dashboard Challenge',
         image: Geepay,

@@ -20,8 +20,7 @@ const ProjectDetails = (props: any) => {
             <p>{ProjectData[projectId].details}</p>
         </div>
         <div className={isToggled ? 'details-links-dark-mode' : 'details-links'}>
-            <a href={ProjectData[projectId].github} target='_blank' onClick={closeModal}><button>GitHub</button></a>
-            <p>/</p>
+          {ProjectData[projectId].github  && <><a href={ProjectData[projectId].github} target='_blank' onClick={closeModal}><button>GitHub</button></a><p>/</p></>}
             <a href={ProjectData[projectId].url} target='_blank' onClick={closeModal}><button>Go To Site</button></a>
         </div>
         <div className={isToggled ? 'project-details-footer-dark-mode' : 'project-details-footer'}>

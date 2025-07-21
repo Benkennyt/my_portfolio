@@ -71,15 +71,15 @@
 display: none;
 }
 
-/* .experience-details {
-
+ .experience-details {
+    display: flex;
 }
 
 .experience-details-dark-mode {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-} */
+} 
 
 .experience-details-1 {
     margin: auto;
@@ -270,6 +270,34 @@ display: none;
 }
 
 
+.company-list {
+    list-style: none;
+    padding: 0;
+}
+
+.company-list li {
+    cursor: pointer;
+    padding: 8px 0;
+    transition: color 0.3s;
+}
+
+.company-list li:hover {
+    color: #3b82f6;
+}
+
+.active-company {
+    font-weight: bold;
+    color: #3b82f6;
+}
+
+.duration {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.experience-points {
+    padding-left: 20px;
+}
 
 
  /* media quries  */

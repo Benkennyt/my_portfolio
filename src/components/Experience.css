@@ -2,7 +2,7 @@
     position: relative;
     min-height: 100vh;
     width: 100%;
-    background-color:  #d1d1d1;
+    background-color: #d1d1d1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,7 @@
     position: relative;
     min-height: 100vh;
     width: 100%;
-    background-color:  #121212;
+    background-color: #121212;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,9 +38,9 @@
     animation: slideInLeft 5s ease forwards;
     -webkit-animation: slideInLeft 5s ease forwards;
     bottom: 250px;
- 
-    
-    
+
+
+
 }
 
 .slide-in-exp-dark-mode h1 {
@@ -58,28 +58,38 @@
 }
 
 @keyframes slideInLeft {
-    0%{transform: translateX(-123%)}
-    100% {transform: translateX(0);}
+    0% {
+        transform: translateX(-123%)
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
 
 @-webkit-keyframes slideInLeft {
-    0%{transform: translateX(-123%)}
-    100% {transform: translateX(0);}
-}  
+    0% {
+        transform: translateX(-123%)
+    }
 
-.hide h1 {
-display: none;
+    100% {
+        transform: translateX(0);
+    }
 }
 
- .experience-details {
-    display: flex;
+.hide h1 {
+    display: none;
+}
+
+/* .experience-details {
+
 }
 
 .experience-details-dark-mode {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} 
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+} */
 
 .experience-details-1 {
     margin: auto;
@@ -89,7 +99,7 @@ display: none;
     line-height: 1.7;
 }
 
-.experience-details-1-dark-mode{
+.experience-details-1-dark-mode {
     margin: auto;
     font-size: 16px;
     max-width: 650px;
@@ -107,7 +117,7 @@ display: none;
     align-items: center;
 }
 
-.experience-details-2-dark-mode{
+.experience-details-2-dark-mode {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -118,7 +128,7 @@ display: none;
 
 
 
- .skills {
+.skills {
     position: relative;
     background-color: black;
     height: 100px;
@@ -129,9 +139,9 @@ display: none;
     align-items: center;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
     margin: 20px;
-} 
+}
 
- .skills-dark-mode {
+.skills-dark-mode {
     position: relative;
     background-color: black;
     height: 100px;
@@ -142,9 +152,9 @@ display: none;
     align-items: center;
     box-shadow: 0px 0px 10px 0px rgb(182, 213, 72);
     margin: 20px;
-} 
+}
 
- .skills-1 {
+.skills-1 {
     background-color: black;
     height: 85px;
     width: 85px;
@@ -152,12 +162,12 @@ display: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Spartan-b ;
+    font-family: Spartan-b;
     font-size: larger;
     color: rgb(238, 237, 237);
 }
 
- .skills-2 {
+.skills-2 {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -167,14 +177,15 @@ display: none;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.6);
     transition: all ease-in-out 0.3s;
-} 
+}
 
- .skills-2:hover, .skills-2-dark-mode:hover {
+.skills-2:hover,
+.skills-2-dark-mode:hover {
     color: rgba(255, 255, 255, 0);
     background-color: rgba(0, 0, 0, 0.1);
-} 
+}
 
- .skills-2-dark-mode {
+.skills-2-dark-mode {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -185,67 +196,68 @@ display: none;
     background-color: rgba(0, 0, 0, 0.6);
     transition: all ease-in-out 0.3s;
     color: #ccd6f6;
-} 
+}
 
 .html {
     background: url('./images/html\ image.png');
     background-size: contain;
     background-repeat: no-repeat;
-} 
+}
 
- .css {
+.css {
     background: url('./images/css\ image.png');
     background-size: contain;
     background-repeat: no-repeat;
-} 
+}
 
- .js {
+.js {
     background: url('./images/JS\ image.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
 
- .ts {
+.ts {
     background: url('./images/typescript\ image.png');
     background-size: contain;
     background-repeat: no-repeat;
-}  
- .react {
+}
+
+.react {
     background: url('./images/react\ image.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
 
- .next {
-     background: url('./images/next.png');
-     background-size: contain;
-     background-repeat: no-repeat;
- }
+.next {
+    background: url('./images/next.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
- .ps {
+.ps {
     background: url('./images/photoshop\ image.png');
     background-size: contain;
     background-repeat: no-repeat;
-} 
+}
 
- .git {
+.git {
     background: url('./images/github\ image.png');
     background-size: contain;
     background-repeat: no-repeat;
-} 
+}
 
 .python {
     background: url('./images/python.png');
     background-size: contain;
     background-repeat: no-repeat;
-} 
+}
 
 .django {
     background: url('./images/django.png');
     background-size: contain;
     background-repeat: no-repeat;
-} 
- 
+}
+
 
 
 
@@ -255,7 +267,7 @@ display: none;
     height: 50px;
     margin-top: 50px;
     color: #121212;
-    cursor:pointer;
+    cursor: pointer;
     transition: all ease-in-out 0.3s;
 }
 
@@ -265,50 +277,22 @@ display: none;
     height: 50px;
     margin-top: 50px;
     color: #B6D548;
-    cursor:pointer;
+    cursor: pointer;
     transition: all ease-in-out 0.3s;
 }
 
 
-.company-list {
-    list-style: none;
-    padding: 0;
-}
-
-.company-list li {
-    cursor: pointer;
-    padding: 8px 0;
-    transition: color 0.3s;
-}
-
-.company-list li:hover {
-    color: #3b82f6;
-}
-
-.active-company {
-    font-weight: bold;
-    color: #3b82f6;
-}
-
-.duration {
-    font-style: italic;
-    margin-bottom: 10px;
-}
-
-.experience-points {
-    padding-left: 20px;
-}
 
 
- /* media quries  */
+/* media quries  */
 
- @media (width <= 1000px) {
+@media (width <=1000px) {
     .slide-in-exp h1 {
         display: none;
-        
+
     }
-    
+
     .slide-in-exp-dark-mode h1 {
         display: none;
     }
-} 
+    }

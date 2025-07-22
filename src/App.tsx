@@ -1,68 +1,121 @@
-import React, { useState, useEffect }  from 'react';
-import './App.css';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Experience from './components/Experience';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import { useInView } from 'react-intersection-observer';
-import ProjectDetails from './components/ProjectDetails';
+import HeroSection from './components/HeroSection';
+import AboutSection from './components/AboutSection';
+import ContactSection from './components/ContactSection';
+import ExperienceSection from './components/ExperienceSection';
+import ProjectsSection from './components/ProjectsSection';
+import SkillsSection from './components/SkillsSection';
+import './App.css'
+import { useEffect, useRef, useState } from 'react';
+import Navigation from './components/navigation/Navigation';
 
 function App() {
-  const [activeElement, setActiveElement] = useState('hero');
-  const [isToggled, setIsToggled] = useState(false);
-  const [projectId, setProjectId] = useState('');
-  const [modalOpen, setModalOpen] = useState(false);
+      const [isScrolled, setIsScrolled] = useState(false);
+      const appRef = useRef<HTMLDivElement | null>(null)
 
-  const handleModalClose = () => {
-    setModalOpen(false);
-    document.body.classList.remove('modalIsOpen');
-  };
+  
+  useEffect(() => {
+    const container = appRef.current
+    if (!container) return;
 
-  const sections = [
-    { ref: useInView({ threshold: 0.5 }), name: 'hero' },
-    { ref: useInView({ threshold: 0.5 }), name: 'about' },
-    { ref: useInView({ threshold: 0.5 }), name: 'experience' },
-    { ref: useInView({ threshold: 0.5 }), name: 'projects' },
-    { ref: useInView({ threshold: 0.5 }), name: 'contact' }
-  ];
+    const handleScroll = () => setIsScrolled(container.scrollTop > 50);
+
+    container.addEventListener('scroll', handleScroll);
+    return () => container.removeEventListener('scroll', handleScroll);
+  }, []);
+        const sectionRefs = {
+    hero: useRef<HTMLDivElement | null>(null),
+    about: useRef<HTMLDivElement | null>(null),
+    experience: useRef<HTMLDivElement | null>(null),
+    projects: useRef<HTMLDivElement | null>(null),
+    skills: useRef<HTMLDivElement | null>(null),
+    contact: useRef<HTMLDivElement | null>(null),
+  }
+  const [inViewStates, setinViewStates] = useState({
+    hero: false,
+    about: false,
+    experience: false,
+    projects: false,
+    skills: false,
+    contact: false,
+  });
 
   useEffect(() => {
-    sections.forEach(({ ref, name }) => {
-      if (ref.inView) setActiveElement(name);
-    });
-  }, [sections]);
+    const entries = Object.entries(sectionRefs);
 
+    const observer = new IntersectionObserver(
+      (entriesList) => {
+        setinViewStates((prevStates) => {
+          const updatedStates = { ...prevStates };
+
+          entriesList.forEach((entry) => {
+            const section = Object.keys(sectionRefs).find(
+              (key) =>
+                sectionRefs[key as keyof typeof sectionRefs].current ===
+                entry.target
+            );
+
+            if (
+              section &&
+              entry.isIntersecting &&
+              !prevStates[section as keyof typeof prevStates]
+            ) {
+              updatedStates[section as keyof typeof updatedStates] = true;
+            }
+          });
+
+          return updatedStates;
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    entries.forEach(([_, ref]) => {
+      if (ref.current) observer.observe(ref.current);
+    });
+
+    return () => {
+      entries.forEach(([_, ref]) => {
+        if (ref.current) observer.unobserve(ref.current);
+      });
+    };
+  }, []);
+  
+  
   return (
-    <div className="App">
-      <div className='container'>
-        {modalOpen && (
-          <ProjectDetails
-            projectId={projectId}
-            closeModal={handleModalClose}
-            isToggled={isToggled}
-          />
-        )}
-        <Navbar
-          activeElement={activeElement}
-          isToggled={isToggled}
-          onToggle={() => setIsToggled(!isToggled)}
-        />
-        <Hero innerRef={sections[0].ref.ref} isToggled={isToggled} />
-        <About innerRef={sections[1].ref.ref} activeElement={activeElement} isToggled={isToggled} />
-        <Experience innerRef={sections[2].ref.ref} activeElement={activeElement} isToggled={isToggled} />
-        <Projects
-          innerRef={sections[3].ref.ref}
-          activeElement={activeElement}
-          setProjectId={setProjectId}
-          setModalOpen={setModalOpen}
-          isToggled={isToggled}
-        />
-        <Contact innerRef={sections[4].ref.ref} isToggled={isToggled} />
+    <div
+      ref={appRef}
+      className="w-screen h-screen min-h-screen bg-gray-900 text-white overflow-x-hidden overflow-y-scroll relative z-0"
+    >
+      <Navigation isScrolled={isScrolled} />
+      <div ref={sectionRefs.hero} className=" z-0 relative">
+        <HeroSection inView={inViewStates.hero} />
       </div>
+      <div ref={sectionRefs.about} className=" z-0 relative">
+        <AboutSection inView={inViewStates.about} />
+      </div>
+      <div ref={sectionRefs.experience} className=" z-0 relative">
+        <ExperienceSection inView={inViewStates.experience} />
+      </div>
+      <div ref={sectionRefs.projects} className=" z-2 relative">
+        <ProjectsSection inView={inViewStates.projects} />
+      </div>
+      <div ref={sectionRefs.skills} className=" z-0 relative">
+        <SkillsSection inView={inViewStates.skills} />
+      </div>
+      <div ref={sectionRefs.contact} className=" z-0 relative">
+        <ContactSection inView={inViewStates.contact} />
+      </div>
+
+      <footer className="bg-gray-800/50 border-t border-gray-700 py-8">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+          <p className="text-gray-400">
+            © 2025 Kehinde Temitayo. Built with React and Tailwind CSS.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
 
 export default App;
+

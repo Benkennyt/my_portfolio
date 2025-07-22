@@ -1,0 +1,39 @@
+.slide-in-exp h1 {
+    position: absolute;
+    color: white;
+    margin: 0;
+    font-family: Spartan-b;
+    font-size: 200px;
+    opacity: .4;
+    transform: translateX(-123%);
+    -webkit-transform: translateX(-123%);
+    animation: slideInLeft 3s ease forwards;
+    -webkit-animation: slideInLeft 3s ease forwards;
+    bottom: 250px;
+    filter: blur(3px);
+
+
+
+}
+.hide h1 {
+    display: none;
+}
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-123%)
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes slideInLeft {
+    0% {
+        transform: translateX(-123%)
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

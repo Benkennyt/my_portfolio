@@ -1,6 +1,3 @@
-import exp from "constants";
-import SlideInText from "./SlideInText";
-
 interface SectionProps {
   id: string;
   title: string;

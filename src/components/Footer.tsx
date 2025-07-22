@@ -1,21 +1,13 @@
 import { ChevronDown } from 'lucide-react';
-import React, { useEffect, useRef, useState } from 'react';
+import { RefObject, useEffect, useRef, useState } from 'react';
+import useClickOutside from '../Hooks/useClickOutside';
 
 const Footer = () => {
   const [isVersionDropdownOpen, setIsVersionDropdownOpen] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement | null>(null);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const handleClickOutside = (event: any) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setIsVersionDropdownOpen(false);
-      }
-    };
-
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, []);
-
+  useClickOutside(dropdownRef as RefObject<HTMLElement>, () => setIsVersionDropdownOpen(false));
+  
   useEffect(() => {
     const handleEscape = (event: { key: string }) => {
       if (event.key === 'Escape') {

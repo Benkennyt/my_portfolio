@@ -198,15 +198,17 @@ const ProjectsSection = ({ inView }: { inView: boolean }) => {
                 projectIndex % 2 === 1 ? 'lg:flex-row-reverse' : ''
               }`}
             >
-              {/* Media Section */}
-              <div className="w-full lg:w-1/2 space-y-4">
-                {/* Main Media Display */}
+              <div className="w-full lg:w-1/2 space-y-4flex flex-col justify-between">
                 <div className="relative bg-transparent rounded-lg overflow-hidden ">
                   <div
-                    className={`${currentMedia?.type === 'image' ? 'h-[380px]' : 'aspect-video'
-                      } w-full bg-transparent rounded-lg overflow-hidden`}
+                    className={`${
+                      currentMedia?.type === 'image'
+                        ? 'h-[380px]'
+                        : 'aspect-video'
+                    } w-full bg-transparent rounded-lg overflow-hidden`}
                   >
-                    {currentMedia?.type === 'video' && currentMedia.url.includes('youtu') ? (
+                    {currentMedia?.type === 'video' &&
+                    currentMedia.url.includes('youtu') ? (
                       <iframe
                         src={getEmbedUrl(currentMedia.url)}
                         className="w-full h-full"
@@ -229,39 +231,41 @@ const ProjectsSection = ({ inView }: { inView: boolean }) => {
                       />
                     )}
                   </div>
-
                 </div>
 
-                {/* Media Thumbnails */}
-                {project.media.length > 1 && (
-                  <div className="flex gap-3 justify-center overflow-x-auto p-2">
-                    {project.media.map((mediaItem, mediaIndex) => (
-                      <button
-                        key={mediaIndex}
-                        onClick={() => handleMediaSelect(projectIndex, mediaIndex)}
-                        className={`relative w-20 h-12 flex-shrink-0 rounded-md overflow-hidden transition-all duration-200 ${currentMediaIndex === mediaIndex
-                            ? 'ring-2 ring-blue-400 scale-105'
-                            : 'opacity-60 hover:opacity-80'
+                <div className="w-full overflow-x-auto overflow-y-hidden p-3">
+                  {project.media.length > 1 && (
+                    <div className=" w-fit flex gap-3 justify-center ">
+                      {project.media.map((mediaItem, mediaIndex) => (
+                        <button
+                          key={mediaIndex}
+                          onClick={() =>
+                            handleMediaSelect(projectIndex, mediaIndex)
+                          }
+                          className={`relative w-20 h-12 flex-shrink-0 rounded-md overflow-hidden transition-all duration-200 ${
+                            currentMediaIndex === mediaIndex
+                              ? 'ring-2 ring-blue-400 scale-105'
+                              : 'opacity-60 hover:opacity-80'
                           }`}
-                      >
-                        {mediaItem.type === 'video' ? (
-                          <div className="w-full h-full bg-gray-800 flex items-center justify-center">
-                            <Play className="w-4 h-4 text-white" />
-                          </div>
-                        ) : (
-                          <img
-                            src={mediaItem.url}
-                            alt={mediaItem.alt}
-                            className="w-full h-full object-contain"
-                          />
-                        )}
-                      </button>
-                    ))}
-                  </div>
-                )}
+                        >
+                          {mediaItem.type === 'video' ? (
+                            <div className="w-full h-full bg-gray-800 flex items-center justify-center">
+                              <Play className="w-4 h-4 text-white" />
+                            </div>
+                          ) : (
+                            <img
+                              src={mediaItem.url}
+                              alt={mediaItem.alt}
+                              className="w-full h-full object-contain"
+                            />
+                          )}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
               </div>
 
-              {/* Project Details Section */}
               <div className="w-full lg:w-1/2 space-y-6">
                 <div className="space-y-4">
                   <div className="flex items-start justify-between">
@@ -286,7 +290,6 @@ const ProjectsSection = ({ inView }: { inView: boolean }) => {
                   </p>
                 </div>
 
-                {/* Key Highlights */}
                 <div className="space-y-3">
                   <h4 className="text-lg font-semibold text-gray-200">
                     Key Highlights
@@ -306,7 +309,6 @@ const ProjectsSection = ({ inView }: { inView: boolean }) => {
                   </div>
                 </div>
 
-                {/* Technologies */}
                 <div className="space-y-3">
                   <h4 className="text-lg font-semibold text-gray-200">
                     Technologies Used

@@ -1,5 +1,3 @@
-import exp from 'constants';
-import React, { useState, useEffect } from 'react';
 import { useExpandedVideo } from '../../contexts/ExpandedVideoContext';
 
 const Navigation = ({ isScrolled }: { isScrolled: boolean }) => {

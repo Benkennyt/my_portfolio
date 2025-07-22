@@ -1,8 +1,6 @@
-import exp from "constants";
 import Section from "./ui/Section";
 import Card from "./ui/Card";
 import { Code } from "lucide-react";
-import SlideInText from "./ui/SlideInText";
 
 const AboutSection = ({ inView }: { inView: boolean }) => {
   return (

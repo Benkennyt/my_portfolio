@@ -1,8 +1,8 @@
-import { ChevronDown, ExternalLink, MessageSquare } from "lucide-react";
+import { ExternalLink, MessageSquare } from "lucide-react";
 import Button from "./ui/Button";
 import MyImage from "../assets/my-image.png";
 import SlideInText from "./ui/SlideInText";
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 
 const HeroSection = ({ inView }: { inView: boolean }) => {
   const ref = useRef<HTMLDivElement | null>(null);

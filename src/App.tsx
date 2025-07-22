@@ -7,6 +7,7 @@ import SkillsSection from './components/SkillsSection';
 import './App.css'
 import { useEffect, useRef, useState } from 'react';
 import Navigation from './components/navigation/Navigation';
+import Footer from './components/Footer';
 
 function App() {
       const [isScrolled, setIsScrolled] = useState(false);
@@ -106,13 +107,7 @@ function App() {
         <ContactSection inView={inViewStates.contact} />
       </div>
 
-      <footer className="bg-gray-800/50 border-t border-gray-700 py-8">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <p className="text-gray-400">
-            © 2025 Kehinde Temitayo. Built with React and Tailwind CSS.
-          </p>
-        </div>
-      </footer>
+      <Footer/>
     </div>
   );
 }

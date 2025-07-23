@@ -21,7 +21,6 @@ const ProjectsSection = ({ inView }: { inView: boolean }) => {
       ],
       highlights: [
         '40% Performance Improvement',
-        '500+ Daily Users',
         '5+ Currencies Supported',
       ],
       externalLink: 'https://clearerpay.com/',
@@ -103,9 +102,8 @@ const ProjectsSection = ({ inView }: { inView: boolean }) => {
         'Form Validation',
       ],
       highlights: [
-        '1000+ Patients Monthly',
-        'Real-time Scheduling',
-        'Secure Authentication',
+        'Real-Time Scheduling',
+        'Secure Login System',
       ],
       media: [
         {

@@ -27,7 +27,7 @@ const Footer = () => {
 
   return (
     <footer className=" ">
-      <div className="w-full flex flex-col md:flex-row items-center gap-2 p-8 ">
+      <div className="w-full flex flex-row items-center gap-2 p-8 ">
               <h4 className="text-white font-semibold  ml-auto">Versions:</h4>
         <div className="relative" ref={dropdownRef}>
           <button

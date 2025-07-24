@@ -82,11 +82,7 @@ const ProjectsSection = ({ inView }: { inView: boolean }) => {
       ],
       highlights: ['Admin Dashboard', 'User Management', 'Savings Products'],
       media: [
-        {
-          type: 'image',
-          alt: 'HajjSavings Dashboard Demo',
-          url: '/images/hajjsavings/hajjsavings.png',
-        },
+       
       ],
     },
     {
@@ -197,7 +193,7 @@ const ProjectsSection = ({ inView }: { inView: boolean }) => {
               }`}
             >
               <div className="w-full lg:w-1/2 space-y-4flex flex-col justify-between">
-                <div className="relative bg-transparent rounded-lg overflow-hidden ">
+                {project.media.length > 1 &&<div className="relative bg-transparent rounded-lg overflow-hidden ">
                   <div
                     className={`${
                       currentMedia?.type === 'image'
@@ -229,7 +225,7 @@ const ProjectsSection = ({ inView }: { inView: boolean }) => {
                       />
                     )}
                   </div>
-                </div>
+                </div>}
 
                 <div className="w-full overflow-x-auto overflow-y-hidden p-3">
                   {project.media.length > 1 && (

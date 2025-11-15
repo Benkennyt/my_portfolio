@@ -29,21 +29,22 @@ const HeroSection = ({ inView }: { inView: boolean }) => {
         <img
           src={MyImage}
           alt="Background"
-          className="h-full object-cover object-center opacity-40 "
+          className="h-full object-cover object-center opacity-40"
+          loading="lazy"
         />
       </div>
 
       <div className="z-10 max-w-6xl mx-auto px-6 text-center flex flex-col items-center ">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
           Frontend{' '}
-          <span className="bg-gradient-to-r  text-blue-400">
-            Developer
+          <span className="bg-gradient-to-r text-blue-400">
+            Engineer
           </span>
         </h1>
         <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-          Building beautiful, functional, and performant web applications with
-          3+ years of experience in React, TypeScript, and modern web
-          technologies.
+          Building scalable web and mobile applications with 3+ years of experience
+          in React, React Native, Node.js (Express), TypeScript, and modern software
+          development practices.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

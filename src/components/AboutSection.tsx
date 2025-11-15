@@ -9,21 +9,22 @@ const AboutSection = ({ inView }: { inView: boolean }) => {
       <div className="grid md:grid-cols-2 gap-12 items-center">
         <div className="space-y-6">
           <p className="text-gray-300 text-lg leading-relaxed">
-            I'm Kehinde Temitayo, a passionate frontend developer with 3 years
-            of experience specializing in React. I thrive in challenging
-            environments where I can learn, collaborate, and create impactful
-            digital experiences.
+            I'm Kehinde Temitayo, a passionate Frontend Engineer with 3 years of
+            experience building scalable applications across web and mobile. I
+            specialize in React, React Native, and Node.js (Express), creating seamless
+            digital experiences from frontend to backend.
           </p>
           <p className="text-gray-300 text-lg leading-relaxed">
             Currently working full-time at The Alternative Bank, I contribute to
-            customer-facing platforms and internal tools. As a self-taught
-            developer, I'm constantly evolving my skills and staying updated
-            with the latest technologies.
+            customer-facing platforms and internal tools. As a self-taught developer,
+            I'm constantly evolving my skills and staying updated with the latest
+            technologies.
           </p>
           <p className="text-gray-300 text-lg leading-relaxed">
-            I'm passionate about building beautiful, functional, and performant
-            web applications that make a real difference in people's lives.
+            I’m driven by the challenge of delivering beautiful, functional, and
+            performant applications that make a real difference in people's lives.
           </p>
+
         </div>
         <Card hover className="text-center">
           <div className="mb-6">
@@ -33,24 +34,21 @@ const AboutSection = ({ inView }: { inView: boolean }) => {
             <h3 className="text-2xl font-bold text-white mb-2">
               3+ Years Experience
             </h3>
-            <p className="text-gray-400">Building scalable web applications</p>
+            <p className="text-gray-400">Delivering web & mobile solutions</p>
           </div>
           <div className="space-y-3 text-sm w-full">
             <div className="flex justify-between w-full">
-              <span className="text-gray-400 text-left">Performance Improvements</span>
-              <span className="text-blue-400 font-semibold text-right">Up to 40%</span>
+              <span className="text-gray-400 text-left">Web & Mobile Apps Delivered</span>
+              <span className="text-blue-400 font-semibold text-right">6+</span>
             </div>
             <div className="flex justify-between w-full">
-              <span className="text-gray-400 text-left">Daily Active Users Served</span>
-              <span className="text-blue-400 font-semibold text-right">500+</span>
+              <span className="text-gray-400 text-left">APIs & Integrations Built</span>
+              <span className="text-blue-400 font-semibold text-right">20+</span>
             </div>
-            <div className="flex justify-between w-full">
-              <span className="text-gray-400 text-left">Uptime Achievement</span>
-              <span className="text-blue-400 font-semibold text-right">99.9%</span>
-            </div>
-          </div>
 
+          </div>
         </Card>
+
       </div>
     </Section>
   );

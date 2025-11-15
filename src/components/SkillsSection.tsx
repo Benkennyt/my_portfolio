@@ -5,22 +5,56 @@ import { Code } from "lucide-react";
 const SkillsSection = ({ inView }: { inView: boolean }) => {
   const skillCategories = [
     {
-      category: "Frontend Technologies",
-      skills: ["React.js", "Next.js", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap", "Redux", "MobX"]
+      category: "Frontend",
+      skills: [
+        "React.js",
+        "Next.js",
+        "React Native",
+        "TypeScript",
+        "JavaScript (ES6+)",
+        "HTML5",
+        "CSS3",
+        "Tailwind CSS",
+        "Bootstrap",
+        "Redux"
+      ]
     },
     {
-      category: "Backend & APIs",
-      skills: ["Node.js", "Express.js", "RESTful APIs", "MongoDB", "API Integration"]
-    },
-    {
-      category: "Tools & Platforms",
-      skills: ["Git", "GitHub", "Netlify", "Vercel", "Firebase", "Figma", "Postman", "Docker", "VS Code"]
+      category: "Backend & Databases",
+      skills: [
+        "Node.js",
+        "Express.js",
+        "RESTful APIs",
+        "PostgreSQL",
+        "MongoDB",
+        "API Integration"
+      ]
     },
     {
       category: "Testing & Quality",
-      skills: ["Jest", "React Testing Library", "Cypress", "ESLint", "Prettier"]
+      skills: [
+        "Jest",
+        "React Testing Library",
+        "Cypress",
+        "ESLint",
+        "Prettier"
+      ]
+    },
+    {
+      category: "Tools & Platforms",
+      skills: [
+        "Git",
+        "GitHub",
+        "Vercel",
+        "Netlify",
+        "Firebase",
+        "Postman",
+        "Figma",
+        "VS Code"
+      ]
     }
   ];
+
 
   return (
     <Section inview={inView} id="skills" title="Skills & Technologies">

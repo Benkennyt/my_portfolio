@@ -7,6 +7,66 @@ const ProjectsSection = ({ inView }: { inView: boolean }) => {
 
   const projects = [
     {
+      name: 'Whiterose Properties Platform',
+      description:
+        'A premium real estate and property listing web application in Nigeria. Led the frontend development using Next.js and TypeScript to build an intuitive, high-performance platform for property exploration, virtual tours, and seamless agent interactions.',
+      technologies: [
+        'Next.js',
+        'TypeScript',
+        'Tailwind CSS',
+        'Mapbox API', 
+        'Image Carousel & Lazy Loading', 
+        'SEO Optimization', 
+        'Form Validation', 
+        'CRM Form Api',
+      ],
+      highlights: [
+        'Mobile Responsiveness',
+        '35% Faster Page Load Speeds via Next.js SSR',
+        'Optimized Performance via Image Lazy Loading',
+        'High Lighthouse Performance & SEO Scores',
+        'Fluid UI Transitions with Framer Motion',
+      ],
+      externalLink: 'https://whiteroseproperties.ng/',
+      media: [
+        {
+          type: 'image',
+          alt: 'whiterose1',
+          url: '/images/whiterose/whiterose1.png',
+        },
+        {
+          type: 'image',
+          alt: 'whiterose2',
+          url: '/images/whiterose/whiterose2.png',
+        },
+        {
+          type: 'image',
+          alt: 'whiterose3',
+          url: '/images/whiterose/whiterose3.png',
+        },
+        {
+          type: 'image',
+          alt: 'whiterose4',
+          url: '/images/whiterose/whiterose4.png',
+        },
+        {
+          type: 'image',
+          alt: 'whiterose5',
+          url: '/images/whiterose/whiterose5.png',
+        },
+        {
+          type: 'image',
+          alt: 'whiterose6',
+          url: '/images/whiterose/whiterose6.png',
+        },
+        {
+          type: 'image',
+          alt: 'whiterose7',
+          url: '/images/whiterose/whiterose7.png',
+        },
+      ],
+    },
+    {
       name: 'ClearerPay Platform',
       description:
         'A multi-currency financial web app for managing digital wallets and cross-border payments. Led the frontend development using React, TypeScript, and Redux. Implemented a clean dashboard, optimized performance by 40%.',

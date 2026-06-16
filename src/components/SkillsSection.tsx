@@ -7,16 +7,20 @@ const SkillsSection = ({ inView }: { inView: boolean }) => {
     {
       category: "Frontend",
       skills: [
+        "HTML5",
+        "CSS3",
+        "JavaScript (ES6+)",
+        "TypeScript",
+
         "React.js",
         "Next.js",
         "React Native",
-        "TypeScript",
-        "JavaScript (ES6+)",
-        "HTML5",
-        "CSS3",
+        "Redux",
+
         "Tailwind CSS",
         "Bootstrap",
-        "Redux"
+        "Shadcn",
+        "Framer Motion"
       ]
     },
     {
